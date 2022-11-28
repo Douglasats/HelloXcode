@@ -79,6 +79,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Seleccionar"/>
+                                <connections>
+                                    <segue destination="fBu-Ky-fbf" kind="show" id="hzq-Ng-lw8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ars-7z-ac7"/>
@@ -93,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1721" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Dni View Controller-->
         <scene sceneID="Vmi-y8-3xZ">
             <objects>
-                <viewController id="fBu-Ky-fbf" sceneMemberID="viewController">
+                <viewController id="fBu-Ky-fbf" customClass="DniViewController" customModule="ProyFreeCoupons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Jh-B6-xaf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,6 +122,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Obtener oferta"/>
+                                <connections>
+                                    <action selector="ObtenerOferta:" destination="fBu-Ky-fbf" eventType="touchUpInside" id="nuC-ki-LAR"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Qd-Ki-tSY">
                                 <rect key="frame" x="76" y="136" width="240" height="128"/>
@@ -145,6 +151,9 @@
                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Cancelar"/>
+                                <connections>
+                                    <action selector="RegresarLista:" destination="fBu-Ky-fbf" eventType="touchUpInside" id="zUi-6J-qpc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dxc-sm-l7b"/>
@@ -152,8 +161,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="hhD-Hr-5rF"/>
                     <connections>
-                        <segue destination="dcg-gK-eYs" kind="show" id="KbT-DB-Uch"/>
-                        <segue destination="xxi-YB-7W4" kind="show" id="sBK-sR-z3X"/>
+                        <segue destination="dcg-gK-eYs" kind="show" identifier="regresarLista" id="KbT-DB-Uch"/>
+                        <segue destination="xxi-YB-7W4" kind="show" identifier="obtenerQr" id="sBK-sR-z3X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qrb-Ae-84k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -233,6 +242,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="cOC-y5-x4d"/>
         <segue reference="KbT-DB-Uch"/>
     </inferredMetricsTieBreakers>
     <resources>
