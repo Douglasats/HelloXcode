@@ -161,7 +161,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hhD-Hr-5rF"/>
                     <connections>
-                        <segue destination="dcg-gK-eYs" kind="show" identifier="regresarLista" id="KbT-DB-Uch"/>
+                        <segue destination="dcg-gK-eYs" kind="show" identifier="dniRegresaLista" id="KbT-DB-Uch"/>
                         <segue destination="xxi-YB-7W4" kind="show" identifier="obtenerQr" id="sBK-sR-z3X"/>
                     </connections>
                 </viewController>
@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="2598" y="-2"/>
         </scene>
-        <!--View Controller-->
+        <!--Qr View Controller-->
         <scene sceneID="xFc-s8-ttY">
             <objects>
-                <viewController id="xxi-YB-7W4" sceneMemberID="viewController">
+                <viewController id="xxi-YB-7W4" customClass="QrViewController" customModule="ProyFreeCoupons" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="drT-aw-fAh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,6 +208,9 @@
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Seguir viendo ofertas"/>
+                                <connections>
+                                    <action selector="RegresarLista:" destination="xxi-YB-7W4" eventType="touchUpInside" id="iJC-jR-Xsz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hem-5y-g8z"/>
@@ -215,7 +218,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="yiK-JO-pBa"/>
                     <connections>
-                        <segue destination="dcg-gK-eYs" kind="show" id="KnD-Xf-gEW"/>
+                        <segue destination="dcg-gK-eYs" kind="show" identifier="qrRegresaLista" id="KnD-Xf-gEW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KrB-8M-OhF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

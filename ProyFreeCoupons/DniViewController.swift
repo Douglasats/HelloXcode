@@ -15,7 +15,7 @@ class DniViewController: UIViewController {
     
     
     @IBAction func RegresarLista(_ sender: UIButton) {
-        performSegue(withIdentifier: "regresarLista", sender: nil)
+        performSegue(withIdentifier: "dniRegresaLista", sender: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

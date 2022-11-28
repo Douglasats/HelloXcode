@@ -9,6 +9,9 @@ import UIKit
 
 class QrViewController: UIViewController {
 
+    @IBAction func RegresarLista(_ sender: UIButton) {
+        performSegue(withIdentifier: "qrRegresaLista", sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
