@@ -16,6 +16,8 @@
 		DE5FE198293519F400C7E9E8 /* PrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE197293519F400C7E9E8 /* PrimerViewController.swift */; };
 		DE5FE19A293549D100C7E9E8 /* DniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE199293549D100C7E9E8 /* DniViewController.swift */; };
 		DE5FE19C29354B4D00C7E9E8 /* QrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE19B29354B4D00C7E9E8 /* QrViewController.swift */; };
+		DE5FE1E029368BAA00C7E9E8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE1DF29368BAA00C7E9E8 /* CustomTableViewCell.swift */; };
+		DEC0F63C2936916F0053CE78 /* ListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC0F63B2936916F0053CE78 /* ListaTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		DE5FE197293519F400C7E9E8 /* PrimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerViewController.swift; sourceTree = "<group>"; };
 		DE5FE199293549D100C7E9E8 /* DniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DniViewController.swift; sourceTree = "<group>"; };
 		DE5FE19B29354B4D00C7E9E8 /* QrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrViewController.swift; sourceTree = "<group>"; };
+		DE5FE1DF29368BAA00C7E9E8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		DEC0F63B2936916F0053CE78 /* ListaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		DE5FE180293192E000C7E9E8 /* ProyFreeCoupons */ = {
 			isa = PBXGroup;
 			children = (
+				DE5FE1DF29368BAA00C7E9E8 /* CustomTableViewCell.swift */,
 				DE5FE181293192E000C7E9E8 /* AppDelegate.swift */,
 				DE5FE183293192E000C7E9E8 /* SceneDelegate.swift */,
 				DE5FE185293192E000C7E9E8 /* ViewController.swift */,
@@ -72,6 +77,7 @@
 				DE5FE197293519F400C7E9E8 /* PrimerViewController.swift */,
 				DE5FE199293549D100C7E9E8 /* DniViewController.swift */,
 				DE5FE19B29354B4D00C7E9E8 /* QrViewController.swift */,
+				DEC0F63B2936916F0053CE78 /* ListaTableViewController.swift */,
 			);
 			path = ProyFreeCoupons;
 			sourceTree = "<group>";
@@ -150,7 +156,9 @@
 				DE5FE186293192E000C7E9E8 /* ViewController.swift in Sources */,
 				DE5FE19C29354B4D00C7E9E8 /* QrViewController.swift in Sources */,
 				DE5FE19A293549D100C7E9E8 /* DniViewController.swift in Sources */,
+				DE5FE1E029368BAA00C7E9E8 /* CustomTableViewCell.swift in Sources */,
 				DE5FE182293192E000C7E9E8 /* AppDelegate.swift in Sources */,
+				DEC0F63C2936916F0053CE78 /* ListaTableViewController.swift in Sources */,
 				DE5FE184293192E000C7E9E8 /* SceneDelegate.swift in Sources */,
 				DE5FE198293519F400C7E9E8 /* PrimerViewController.swift in Sources */,
 			);

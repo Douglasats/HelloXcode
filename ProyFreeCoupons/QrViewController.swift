@@ -12,6 +12,13 @@ class QrViewController: UIViewController {
     @IBAction func RegresarLista(_ sender: UIButton) {
         performSegue(withIdentifier: "qrRegresaLista", sender: nil)
     }
+    
+    
+    @IBAction func listaOferta(_ sender: UIButton) {
+        navigationController?.popViewController( animated: true)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
