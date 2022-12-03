@@ -34,9 +34,10 @@ class DistritosCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
-        
+        let distrito = distritos[indexPath.row]
         let myStoryboard = UIStoryboard(name: "ST02", bundle: nil)
         guard let listaViewController = myStoryboard.instantiateViewController(withIdentifier: "ListaViewController") as? ListaViewController else {return}
+        listaViewController.codigoDistrito = distrito.cod_dis
         navigationController?.pushViewController(listaViewController, animated: true)
     }
 }

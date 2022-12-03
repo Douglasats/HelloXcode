@@ -14,8 +14,8 @@ class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var iconImage: UIImageView!
     
-    func setup(oferta: Oferta){
-        ofertaLabel.text = oferta.name
-        iconImage.image = UIImage(named: oferta.image)
+    func setup(oferta: Oferta,categoria: String){
+        ofertaLabel.text = oferta.des_ofe
+        iconImage.image = UIImage(named: categoria)
     }
 }

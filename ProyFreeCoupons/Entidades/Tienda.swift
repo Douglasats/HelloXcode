@@ -8,6 +8,7 @@
 import Foundation
 
 struct Tienda {
-    let name: String
-    let id: Int
+    let cod_tie: Int
+    let nom_tie: String
+    let cod_dis: Int
 }

@@ -14,6 +14,7 @@
 		DE5FE198293519F400C7E9E8 /* PrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE197293519F400C7E9E8 /* PrimerViewController.swift */; };
 		DE5FE19A293549D100C7E9E8 /* DniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE199293549D100C7E9E8 /* DniViewController.swift */; };
 		DE8694B6293BBD6600A91415 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8694B5293BBD6600A91415 /* Main.storyboard */; };
+		DE8694B8293BC57B00A91415 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8694B7293BC57B00A91415 /* Categoria.swift */; };
 		DE991211293BB114005EBF65 /* DistritosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE991210293BB114005EBF65 /* DistritosCollectionViewController.swift */; };
 		DE991215293BB1EF005EBF65 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE991214293BB1EF005EBF65 /* CustomCollectionViewCell.swift */; };
 		DE991217293BB396005EBF65 /* Distrito.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE991216293BB396005EBF65 /* Distrito.swift */; };
@@ -35,6 +36,7 @@
 		DE5FE197293519F400C7E9E8 /* PrimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerViewController.swift; sourceTree = "<group>"; };
 		DE5FE199293549D100C7E9E8 /* DniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DniViewController.swift; sourceTree = "<group>"; };
 		DE8694B5293BBD6600A91415 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		DE8694B7293BC57B00A91415 /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
 		DE991210293BB114005EBF65 /* DistritosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritosCollectionViewController.swift; sourceTree = "<group>"; };
 		DE991214293BB1EF005EBF65 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE991216293BB396005EBF65 /* Distrito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distrito.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				DE991216293BB396005EBF65 /* Distrito.swift */,
 				DEC0F63D2936975F0053CE78 /* Tienda.swift */,
 				DEC0F6432936A5680053CE78 /* Oferta.swift */,
+				DE8694B7293BC57B00A91415 /* Categoria.swift */,
 			);
 			path = Entidades;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				DEC0F66E29392AD10053CE78 /* QrViewController.swift in Sources */,
 				DE991215293BB1EF005EBF65 /* CustomCollectionViewCell.swift in Sources */,
 				DE5FE19A293549D100C7E9E8 /* DniViewController.swift in Sources */,
+				DE8694B8293BC57B00A91415 /* Categoria.swift in Sources */,
 				DE991217293BB396005EBF65 /* Distrito.swift in Sources */,
 				DEC0F6442936A5680053CE78 /* Oferta.swift in Sources */,
 				DE5FE182293192E000C7E9E8 /* AppDelegate.swift in Sources */,

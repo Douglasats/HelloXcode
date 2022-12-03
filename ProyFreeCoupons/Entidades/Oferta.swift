@@ -8,7 +8,8 @@
 import Foundation
 
 struct Oferta {
-    let id: Int
-    let name: String
-    let image: String
+    let cod_ofe: Int
+    let des_ofe: String
+    let cod_cat: Int
+    let cod_tie: Int
 }
