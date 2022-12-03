@@ -1,5 +1,5 @@
 //
-//  QrViewController.swift
+//  PrimerViewController.swift
 //  ProyFreeCoupons
 //
 //  Created by Douglas Andreus Tafur Saldivar on 28/11/22.
@@ -7,25 +7,18 @@
 
 import UIKit
 
-class QrViewController: UIViewController {
+class PrimerViewController: UIViewController {
 
-    @IBAction func RegresarLista(_ sender: UIButton) {
-        performSegue(withIdentifier: "qrRegresaLista", sender: nil)
-    }
-    
-    
-    @IBAction func listaOferta(_ sender: UIButton) {
-        navigationController?.popViewController( animated: true)
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func irDistritoButton(_ sender: Any) {
+        guard let distritoViewController = storyboard?.instantiateViewController(withIdentifier: "DistritosCollectionViewController") as? DistritosCollectionViewController else {return}
+        navigationController?.pushViewController(distritoViewController, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
