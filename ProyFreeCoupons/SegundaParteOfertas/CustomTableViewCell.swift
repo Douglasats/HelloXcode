@@ -11,11 +11,14 @@ import UIKit
 class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var ofertaLabel: UILabel!
-
     @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var tiendaLabel: UILabel!
+    @IBOutlet weak var cateLabel: UILabel!
     
-    func setup(oferta: Oferta,categoria: String){
+    func setup(oferta: Oferta,categoria: String,nomCategoria: String, tienda: String){
         ofertaLabel.text = oferta.des_ofe
         iconImage.image = UIImage(named: categoria)
+        tiendaLabel.text = tienda
+        cateLabel.text = nomCategoria
     }
 }

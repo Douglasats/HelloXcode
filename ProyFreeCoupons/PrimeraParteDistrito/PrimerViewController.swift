@@ -9,11 +9,12 @@ import UIKit
 
 class PrimerViewController: UIViewController {
 
+    
+    @IBOutlet weak var nombreTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-    
+
     @IBAction func irDistritoButton(_ sender: Any) {
         guard let distritoViewController = storyboard?.instantiateViewController(withIdentifier: "DistritosCollectionViewController") as? DistritosCollectionViewController else {return}
         navigationController?.pushViewController(distritoViewController, animated: true)
