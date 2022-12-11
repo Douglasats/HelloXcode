@@ -1,0 +1,318 @@
+[
+    {
+        "nameDistrito": "Los Olivos",
+        "tiendas" : [
+            {
+            "nameTienda" : "Tambo",
+            "ofertas" : [
+                {
+                    "value" : "10%",
+                    "categoria" : "Cheaps"
+                },
+                {
+                    "value" : "15%",
+                    "categoria" : "Beer"
+                },
+                {
+                    "value" : "25%",
+                    "categoria" : "Milk"
+                },
+                {
+                    "value" : "5%",
+                    "categoria" : "Drink"
+                },
+                {
+                    "value" : "10%",
+                    "categoria" : "Pizza"
+                },
+                {
+                    "value" : "10%",
+                    "categoria" : "Chicken"
+                },
+                {
+                    "value" : "10%",
+                    "categoria" : "Soda"
+                }
+            ]
+            },
+            {
+            "nameTienda" : "Más",
+            "ofertas" : [
+                {
+                    "value" : "12%",
+                    "categoria" : "Cheaps"
+                },
+                {
+                    "value" : "12%",
+                    "categoria" : "Beer"
+                },
+                {
+                    "value" : "35%",
+                    "categoria" : "Pizza"
+                },
+                {
+                    "value" : "35%",
+                    "categoria" : "Milk"
+                },
+                {
+                    "value" : "10%",
+                    "categoria" : "Soda"
+                },
+                {
+                    "value" : "10%",
+                    "categoria" : "Drink"
+                }
+            ]
+            },
+            {
+            "nameTienda" : "Oxxo",
+            "ofertas" : [
+                {
+                    "value" : "7%",
+                    "categoria" : "Beer"
+                },
+                {
+                    "value" : "7%",
+                    "categoria" : "Cheaps"
+                },
+                {
+                    "value" : "8%",
+                    "categoria" : "Drink"
+                },
+                {
+                    "value" : "8%",
+                    "categoria" : "Soda"
+                }
+            ]
+            }
+        ]
+
+    },
+    {
+        "nameDistrito": "San Miguel",
+        "tiendas" : [
+                {
+                "nameTienda" : "Tambo",
+                "ofertas" : [
+                    {
+                        "value" : "10%",
+                        "categoria" : "Beer"
+                    },
+                    {
+                        "value" : "90%",
+                        "categoria" : "Cheaps"
+                    },
+                    {
+                        "value" : "15%",
+                        "categoria" : "Milk"
+                    },
+                    {
+                        "value" : "15%",
+                        "categoria" : "Pizza"
+                    },
+                    {
+                        "value" : "15%",
+                        "categoria" : "Chicken"
+                    },
+                    {
+                        "value" : "8%",
+                        "categoria" : "Drink"
+                    },
+                    {
+                        "value" : "8%",
+                        "categoria" : "Soda"
+                    }
+                ]
+                },
+                {
+                "nameTienda" : "Más",
+                "ofertas" : [
+                    {
+                        "value" : "10%",
+                        "categoria" : "Cheaps"
+                    },
+                    {
+                        "value" : "50%",
+                        "categoria" : "Beer"
+                    },
+                    {
+                        "value" : "35%",
+                        "categoria" : "Milk"
+                    },
+                    {
+                        "value" : "35%",
+                        "categoria" : "Pizza"
+                    },
+                    {
+                        "value" : "10%",
+                        "categoria" : "Drink"
+                    },
+                    {
+                        "value" : "10%",
+                        "categoria" : "Soda"
+                    }
+                ]
+                },
+                {
+                "nameTienda" : "Oxxo",
+                "ofertas" : [
+                    {
+                        "value" : "8%",
+                        "categoria" : "Beer"
+                    },
+                    {
+                        "value" : "7%",
+                        "categoria" : "Cheaps"
+                    },
+                    {
+                        "value" : "8%",
+                        "categoria" : "Drink"
+                    },
+                    {
+                        "value" : "8%",
+                        "categoria" : "Soda"
+                    },
+                    {
+                        "value" : "75%",
+                        "categoria" : "Chicken"
+                    },
+                    {
+                        "value" : "75%",
+                        "categoria" : "Pizza"
+                    }
+                ]
+                }
+        ]
+    
+    },
+    {
+        "nameDistrito": "Magdalena",
+        "tiendas" : [
+                {
+                "nameTienda" : "Tambo",
+                "ofertas" : [
+                    {
+                        "value" : "8%",
+                        "categoria" : "Beer"
+                    },
+                    {
+                        "value" : "40%",
+                        "categoria" : "Cheaps"
+                    },
+                    {
+                        "value" : "5%",
+                        "categoria" : "Milk"
+                    },
+                    {
+                        "value" : "5%",
+                        "categoria" : "Pizza"
+                    },
+                    {
+                        "value" : "5%",
+                        "categoria" : "Chicken"
+                    },
+                    {
+                        "value" : "12%",
+                        "categoria" : "Drink"
+                    },
+                    {
+                        "value" : "12%",
+                        "categoria" : "Soda"
+                    }
+                ]
+                },
+                {
+                "nameTienda" : "Más",
+                "ofertas" : [
+                    {
+                        "value" : "75%",
+                        "categoria" : "Cheaps"
+                    },
+                    {
+                        "value" : "25%",
+                        "categoria" : "Beer"
+                    },
+                    {
+                        "value" : "15%",
+                        "categoria" : "Milk"
+                    },
+                    {
+                        "value" : "15%",
+                        "categoria" : "Pizza"
+                    },
+                    {
+                        "value" : "18%",
+                        "categoria" : "Soda"
+                    },
+                    {
+                        "value" : "18%",
+                        "categoria" : "Drink"
+                    }
+                ]
+                },
+                {
+                "nameTienda" : "Oxxo",
+                "ofertas" : [
+                    {
+                        "value" : "5%",
+                        "categoria" : "Cheaps"
+                    },
+                    {
+                        "value" : "5%",
+                        "categoria" : "Beer"
+                    },
+                    {
+                        "value" : "5%",
+                        "categoria" : "Soda"
+                    },
+                    {
+                        "value" : "5%",
+                        "categoria" : "Drink"
+                    },
+                    {
+                        "value" : "15%",
+                        "categoria" : "Chicken"
+                    },
+                    {
+                        "value" : "15%",
+                        "categoria" : "Pizza"
+                    }
+                ]
+                },
+                {
+                    "nameTienda" : "Dollar City",
+                    "ofertas" : [
+                        {
+                            "value" : "10%",
+                            "categoria" : "Cheaps"
+                        },
+                        {
+                            "value" : "12%",
+                            "categoria" : "Beer"
+                        },
+                        {
+                            "value" : "20%",
+                            "categoria" : "Drink"
+                        },
+                        {
+                            "value" : "15%",
+                            "categoria" : "Soda"
+                        },
+                        {
+                            "value" : "18%",
+                            "categoria" : "Pizza"
+                        },
+                        {
+                            "value" : "10%",
+                            "categoria" : "Chicken"
+                        },
+                        {
+                            "value" : "10%",
+                            "categoria" : "Milk"
+                        }
+                    ]
+                    }
+        ]
+    
+    }
+]

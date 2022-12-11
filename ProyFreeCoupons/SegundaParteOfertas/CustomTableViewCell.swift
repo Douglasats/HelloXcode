@@ -15,10 +15,12 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var tiendaLabel: UILabel!
     @IBOutlet weak var cateLabel: UILabel!
     
-    func setup(oferta: Oferta,categoria: String,nomCategoria: String, tienda: String){
-        ofertaLabel.text = oferta.des_ofe
-        iconImage.image = UIImage(named: categoria)
+    
+    
+    func setup(tienda: String){
+        //ofertaLabel.text = ""
+        //iconImage.image = UIImage(named: categoria)
         tiendaLabel.text = tienda
-        cateLabel.text = nomCategoria
+        //cateLabel.text = nomCategoria
     }
 }

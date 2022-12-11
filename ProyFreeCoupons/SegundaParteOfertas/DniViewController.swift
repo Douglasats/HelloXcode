@@ -19,7 +19,7 @@ class DniViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ofertaLabel.text = "Canjear " + name
+        ofertaLabel.text = "Canjear "
         ofertaImageView.image = UIImage(named: image)
         usuarioLabel.text = usuario
         
