@@ -13,11 +13,20 @@ protocol OfertaInteractorProtocol {
 
 class OfertaInteractor {
     var presenter: OfertaPresenterProtocol?
-    var api: 
+    var api: RemoteRepository?
+    
+    required init(presenter: OfertaPresenterProtocol? = nil, api: RemoteRepository? = nil) {
+        self.presenter = presenter
+        self.api = api
+    }
 }
 
 extension OfertaInteractor: OfertaInteractorProtocol {
     func conseguirOfertas() {
-        presenter?.entregarOfertas(oferta)
+        if let ofertas = api?.fetchOfertas(){
+            let ofertaEntity = OfertaEntity.make(ofertas)
+            presenter?.entregarOfertas(ofertaEntity)
+        }
     }
 }
+

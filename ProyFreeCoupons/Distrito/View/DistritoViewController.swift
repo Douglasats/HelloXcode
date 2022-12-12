@@ -23,7 +23,7 @@ class DistritoViewController: UIViewController {
         super.viewDidLoad()
         
         collectionView.dataSource = self
-        //collectionView.delegate = self
+        collectionView.delegate = self
         collectionView.register(UINib(nibName: "MyCustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "mycell")
         presenter?.pedirDistritos()
     }
@@ -74,15 +74,12 @@ extension DistritoViewController : UICollectionViewDataSource {
     }
 }
 
-/*
+
 extension DistritoViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let distrito = distritos[indexPath.row]
-        let myStoryboard = UIStoryboard(name: "ST02", bundle: nil)
-        guard let listaViewController = myStoryboard.instantiateViewController(withIdentifier: "ListaViewController") as? ListaViewController else {return}
-        listaViewController.tituloDistrito = distrito.nameDistrito
-        listaViewController.tiendas = distrito.tiendas
-        navigationController?.pushViewController(listaViewController, animated: true)
+        let distrito = distritosArray[indexPath.row].nameDistrito
+        presenter?.pedirOfertaDistrito(distrito)
+        print("Estoy haciendo click \(distrito)")
     }
 }
-*/
+

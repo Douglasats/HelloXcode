@@ -8,5 +8,14 @@
 import Foundation
 
 struct OfertaEntity{
+    let valor: Int
+    let categoria: String
+    let imgCat: String
+    let tienda: String
+    let distrito: String
     
+    static func make(_ ofertas: [OfertarResponse]) -> [OfertaEntity]{
+        return ofertas.map({OfertaEntity(valor: $0.valor,categoria: $0.categoria,imgCat: $0.imgCat,
+                                         tienda: $0.tienda,distrito: $0.distrito)})
+    }
 }

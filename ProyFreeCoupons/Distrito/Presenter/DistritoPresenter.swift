@@ -10,7 +10,9 @@ import Foundation
 protocol DistritoPresenterProtocol {
     func pedirDistritos()
     func entregarDistritos(_ distrito: [DistritoEntity])
-
+    
+    //pedir distrito para ir a otra vista
+    func pedirOfertaDistrito(_ distrito: String)
 }
 
 class DistritoPresenter {
@@ -20,15 +22,16 @@ class DistritoPresenter {
 }
 
 extension DistritoPresenter: DistritoPresenterProtocol {
-
+    func pedirOfertaDistrito(_ distrito: String) {
+        router?.obtenerOfertaDistrito(distrito)
+    }
+    
     func pedirDistritos() {
         interactor?.conseguirDistritos()
-        print("presenter pide a interactor")
     }
     
     func entregarDistritos(_ distrito: [DistritoEntity]) {
         view?.obtenerDistritos(distrito)
-        print("PRESENTER")
     }
 
 }

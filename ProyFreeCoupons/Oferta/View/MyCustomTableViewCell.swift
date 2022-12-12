@@ -2,18 +2,13 @@
 //  MyCustomTableViewCell.swift
 //  ProyFreeCoupons
 //
-//  Created by Douglas Andreus Tafur Saldivar on 9/12/22.
+//  Created by Douglas Andreus Tafur Saldivar on 12/12/22.
 //
 
 import UIKit
 
 class MyCustomTableViewCell: UITableViewCell {
 
-    
-    @IBOutlet weak var myIconImage: UIImageView!
-    @IBOutlet weak var descripcionLabel: UILabel!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

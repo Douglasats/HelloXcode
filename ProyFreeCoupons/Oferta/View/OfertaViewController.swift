@@ -12,11 +12,11 @@ protocol OfertaViewProtocol {
 }
 
 class OfertaViewController: UIViewController {
+
+    var presenter: OfertaPresenterProtocol?
+    var ofertasArray: [OfertaEntity] = []
+    var ofertasFinal: [OfertaEntity] = []
     
-    
-    var codigoDistrito: Int?
-    var tituloDistrito: String?
-    var usuario: String?
     /*var ofertasDistrito:[Oferta] = []
     var backupOfertas: [Oferta] = []
     
@@ -29,50 +29,40 @@ class OfertaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleDistritoLabel.text = tituloDistrito
-        /*tableView.dataSource = self
-         tableView.delegate = self*/
+        tableView.dataSource = self
+         //tableView.delegate = self*/
         
         tableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "mycellTable")
+        presenter?.pedirOfertas()
+        ofertasFinal = ofertasArray.filter({$0.distrito == presenter?.distrito})
+        //tableView.reloadData()
     }
 }
 
 extension OfertaViewController: OfertaViewProtocol {
     func obtenerOfertas(_ oferta: [OfertaEntity]) {
-        <#code#>
+        ofertasArray = oferta
+        tableView.reloadData()
     }
 }
-/*
-extension ListaViewController: UITableViewDataSource{
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return tiendas.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let tiendas = tiendas
-        return tiendas[section].ofertas.count
+
+extension OfertaViewController: UITableViewDataSource{
         
-    }
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let tiendas = tiendas
-        return tiendas[section].nameTienda
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ofertasFinal.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let model = tiendas[indexPath.section].ofertas[indexPath.row].value
-        let categoria = tiendas[indexPath.section].ofertas[indexPath.row].categoria
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "mycellTable", for: indexPath) as? MyCustomTableViewCell else {
             return UITableViewCell()
         }
-        cell.descripcionLabel.text = "Descuento del \(model) en \(categoria)"
-        cell.myIconImage.image = UIImage(named: categoria)
-        
+        cell.myIconImage.image = UIImage(named: ofertasFinal[indexPath.row].imgCat)
         return cell
     }
 }
     
-    extension ListaViewController: UITableViewDelegate{
+/*
+extension ListaViewController: UITableViewDelegate{
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let tienda = tiendas[indexPath.row]
             guard let dniViewController = storyboard?.instantiateViewController(withIdentifier: "DniViewController") as? DniViewController else {
@@ -82,6 +72,5 @@ extension ListaViewController: UITableViewDataSource{
             let nav = UINavigationController(rootViewController: dniViewController)
             present(nav, animated: true)
         }
-    }
-
+}
 */

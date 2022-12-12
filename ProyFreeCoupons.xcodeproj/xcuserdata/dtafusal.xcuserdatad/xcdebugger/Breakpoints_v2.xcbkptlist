@@ -243,47 +243,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EACD530F-9C52-4598-9B39-A1A9E3E65B9D"
+            uuid = "04DB6BAC-E233-4966-8B3A-86A422A171E3"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/Distrito/Interactor/DistritoInteractor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "conseguirDistritos()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5CD67BC2-F8E5-487D-82B2-9492427B88DC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/DistritoConfigurator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "makeList()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "04DB6BAC-E233-4966-8B3A-86A422A171E3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/Distrito/DistritoConfigurator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "makeList()"
             landmarkType = "7">
          </BreakpointContent>
@@ -292,7 +260,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B69AA51F-B028-4B33-80F6-DC2F8F47F3BE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/DistritoConfigurator.swift"
@@ -302,222 +270,6 @@
             endingLineNumber = "24"
             landmarkName = "makeList()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A715D464-7A2B-4D2C-B5D7-61838A9AD1A3"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "DistritoViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "A715D464-7A2B-4D2C-B5D7-61838A9AD1A3 - 5081609fb458c079"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.distritosArray.getter : Swift.Array&lt;ProyFreeCoupons.DistritoEntity&gt;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "A715D464-7A2B-4D2C-B5D7-61838A9AD1A3 - 2abccd29d362a865"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.distritosArray.setter : Swift.Array&lt;ProyFreeCoupons.DistritoEntity&gt;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "A715D464-7A2B-4D2C-B5D7-61838A9AD1A3 - fbc56f8f37a74a74"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.distritosArray.modify : Swift.Array&lt;ProyFreeCoupons.DistritoEntity&gt;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "0">
-               </Location>
-               <Location
-                  uuid = "A715D464-7A2B-4D2C-B5D7-61838A9AD1A3 - 89c8e647265e19be"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.distritosArray.modify : Swift.Array&lt;ProyFreeCoupons.DistritoEntity&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "A715D464-7A2B-4D2C-B5D7-61838A9AD1A3 - a69433632e4f0299"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ProyFreeCoupons.DistritoViewController"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "148">
-               </Location>
-               <Location
-                  uuid = "A715D464-7A2B-4D2C-B5D7-61838A9AD1A3 - f101a24810e548bb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ProyFreeCoupons.DistritoViewController&gt;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "124">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EB27ADBA-67D5-4413-900C-B5F7061E6152"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "DistritoViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "EB27ADBA-67D5-4413-900C-B5F7061E6152 - 4d207d68aaa86ae8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.presenter.getter : Swift.Optional&lt;ProyFreeCoupons.DistritoPresenterProtocol&gt;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "EB27ADBA-67D5-4413-900C-B5F7061E6152 - 4485c18d10a9fed4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.presenter.setter : Swift.Optional&lt;ProyFreeCoupons.DistritoPresenterProtocol&gt;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "EB27ADBA-67D5-4413-900C-B5F7061E6152 - 44605f9109acc5e5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.presenter.modify : Swift.Optional&lt;ProyFreeCoupons.DistritoPresenterProtocol&gt;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "0">
-               </Location>
-               <Location
-                  uuid = "EB27ADBA-67D5-4413-900C-B5F7061E6152 - 2fb2d8ea53e2231f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.presenter.modify : Swift.Optional&lt;ProyFreeCoupons.DistritoPresenterProtocol&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "EB27ADBA-67D5-4413-900C-B5F7061E6152 - a69433632e4f02b8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ProyFreeCoupons.DistritoViewController"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "EB27ADBA-67D5-4413-900C-B5F7061E6152 - f101a24810e5489a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ProyFreeCoupons.DistritoViewController&gt;"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "68">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -530,8 +282,8 @@
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -546,8 +298,8 @@
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -562,8 +314,8 @@
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -578,8 +330,8 @@
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -588,14 +340,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C55F31FF-A81F-4659-89B9-6F9E5DFEA8AC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -604,14 +356,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FFE70B96-CEB8-40CB-AB9D-0DB91BBD8CE7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -620,14 +372,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3956EB8F-7361-4778-AE24-2D9778C8611A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -636,14 +388,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5655A71D-10B0-47A4-873B-382949155975"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -652,14 +404,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0D6299C9-B9E1-4CBD-BD03-C03D5FD4BCE2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -668,14 +420,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "035748E0-0701-4D7C-8B71-93A4CED9A299"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -684,31 +436,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EA874246-936F-4FD5-9D24-B6061E76EF2F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "fetchDistritos()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5CCAAEF4-786A-4753-8E7A-19FEF19C1E2D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/HomeViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -716,7 +452,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "49EF39D2-3AA9-49C5-9C6B-067079C0C2E8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/DistritoConfigurator.swift"
@@ -731,79 +467,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EC753C76-8AA1-4A38-8B43-B0F9614EF457"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/Distrito/Interactor/DistritoInteractor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "conseguirDistritos()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EC753C76-8AA1-4A38-8B43-B0F9614EF457 - 13476e39f0fddbc0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoInteractor.conseguirDistritos() -&gt; ()"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/Interactor/DistritoInteractor.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "220">
-               </Location>
-               <Location
-                  uuid = "EC753C76-8AA1-4A38-8B43-B0F9614EF457 - 13476e39f0fddbc0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProyFreeCoupons.DistritoInteractor.conseguirDistritos() -&gt; ()"
-                  moduleName = "ProyFreeCoupons"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dtafusal/Desktop/HelloXcode/ProyFreeCoupons/Distrito/Interactor/DistritoInteractor.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "376">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "97311C5F-0ABC-45A2-AF4D-93EC93E9A087"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/Distrito/Interactor/DistritoInteractor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "conseguirDistritos()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "3000EBB5-E44C-43B1-8C4C-8C80CAA1E949"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/Network/Networking.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "fetchDistritos()"
             landmarkType = "7">
          </BreakpointContent>
@@ -811,40 +483,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FF68E4EE-B0C0-4E58-8ACC-3862F7DC04A7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/Distrito/Interactor/DistritoInteractor.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "conseguirDistritos()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C31E0D10-ABF4-4975-8D7B-80245D700BDB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/HomeViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "irDistritoButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A9DF4B41-F71E-4A49-8064-F12791AA4905"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ProyFreeCoupons/Distrito/DistritoConfigurator.swift"
@@ -859,16 +499,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "68AB8EC5-5C8C-409E-B6EC-D34B01A80B4B"
+            uuid = "EA77B704-77C9-4F18-ADBB-466E56F80531"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ProyFreeCoupons/Distrito/DistritoConfigurator.swift"
+            filePath = "ProyFreeCoupons/Distrito/Router/DistritoRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "makeList()"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "obtenerOfertaDistrito(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49CB636F-FF9D-4386-8FD1-42278B8AB9B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyFreeCoupons/Distrito/Presenter/DistritoPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "pedirOfertaDistrito(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D188BA59-AD17-4994-A268-635777CAC04B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyFreeCoupons/Distrito/Presenter/DistritoPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "pedirOfertaDistrito(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "440D5F5C-E65C-4650-A225-BDC94D5212F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyFreeCoupons/Distrito/View/DistritoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F20D755C-3143-4885-B44B-60121BF7A1B8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyFreeCoupons/Oferta/OfertaConfigurator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "makeList(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29991D7B-A612-4767-8979-0B99E70550E6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyFreeCoupons/Oferta/OfertaConfigurator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "makeList(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A382101-6AF4-4898-BCEF-6C4F47DDC365"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProyFreeCoupons/Oferta/OfertaConfigurator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "makeList(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

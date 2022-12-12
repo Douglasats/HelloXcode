@@ -1,0 +1,73 @@
+
+[
+    {
+        "valor": 10,
+        "categoria":"Snacks",
+        "imgCat":"Cheaps",
+        "tienda":"Tambo",
+        "distrito":"Los Olivos"
+    },
+    {
+        "valor": 15,
+        "categoria":"Cervezas",
+        "imgCat":"Beer",
+        "tienda":"Tambo",
+        "distrito":"Los Olivos"
+    },
+    {
+        "valor": 20,
+        "categoria":"Bebidas Alcholicas",
+        "imgCat":"Drink",
+        "tienda":"Mass",
+        "distrito":"Los Olivos"
+    },
+    {
+        "valor": 30,
+        "categoria":"Pizza's",
+        "imgCat":"Pizza",
+        "tienda":"Oxxo",
+        "distrito":"Los Olivos"
+    },
+    {
+        "valor": 10,
+        "categoria":"Snacks",
+        "imgCat":"Cheaps",
+        "tienda":"Tambo",
+        "distrito":"San Miguel"
+    },
+    {
+        "valor": 15,
+        "categoria":"Cervezas",
+        "imgCat":"Beer",
+        "tienda":"Tambo",
+        "distrito":"San Miguel"
+    },
+    {
+        "valor": 20,
+        "categoria":"Bebidas Alcholicas",
+        "imgCat":"Drink",
+        "tienda":"Mass",
+        "distrito":"San Miguel"
+    },
+    {
+        "valor": 30,
+        "categoria":"Pollos a la brasa",
+        "imgCat":"Chicken",
+        "tienda":"Oxxo",
+        "distrito":"Magdalena"
+    },
+    {
+        "valor": 25,
+        "categoria":"Yogurt's",
+        "imgCat":"Milk",
+        "tienda":"Oxxo",
+        "distrito":"Magdalena"
+    },
+    {
+        "valor": 15,
+        "categoria":"Pizza's",
+        "imgCat":"Pizza",
+        "tienda":"Tambo",
+        "distrito":"Magdalena"
+    },
+]

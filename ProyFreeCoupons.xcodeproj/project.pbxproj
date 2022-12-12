@@ -10,8 +10,6 @@
 		DE2923682943158A0047A84C /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923672943158A0047A84C /* NetworkingProvider.swift */; };
 		DE29236B2943165A0047A84C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE29236A2943165A0047A84C /* Alamofire */; };
 		DE29237029439EE10047A84C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29236F29439EE10047A84C /* UIButtonExtension.swift */; };
-		DE2923782943BD0E0047A84C /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923762943BD0E0047A84C /* MyCustomTableViewCell.swift */; };
-		DE2923792943BD0E0047A84C /* MyCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2923772943BD0E0047A84C /* MyCustomTableViewCell.xib */; };
 		DE29238C29444A7A0047A84C /* DistritoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29238B29444A7A0047A84C /* DistritoPresenter.swift */; };
 		DE29238E29444A940047A84C /* DistritoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29238D29444A940047A84C /* DistritoInteractor.swift */; };
 		DE29239029444AA60047A84C /* DistritoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29238F29444AA60047A84C /* DistritoRouter.swift */; };
@@ -24,6 +22,8 @@
 		DE2923E8294501130047A84C /* OfertaEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923E7294501130047A84C /* OfertaEntity.swift */; };
 		DE2923EA294501950047A84C /* OfertaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923E9294501950047A84C /* OfertaPresenter.swift */; };
 		DE2923EC294502610047A84C /* OfertaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923EB294502610047A84C /* OfertaInteractor.swift */; };
+		DE2923F0294793AD0047A84C /* oferta_success_01.json in Resources */ = {isa = PBXBuildFile; fileRef = DE2923EF294793AD0047A84C /* oferta_success_01.json */; };
+		DE2923F2294795CA0047A84C /* OfertaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923F1294795CA0047A84C /* OfertaResponse.swift */; };
 		DE5FE182293192E000C7E9E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE181293192E000C7E9E8 /* AppDelegate.swift */; };
 		DE5FE184293192E000C7E9E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE183293192E000C7E9E8 /* SceneDelegate.swift */; };
 		DE5FE18B293192E100C7E9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5FE18A293192E100C7E9E8 /* Assets.xcassets */; };
@@ -38,13 +38,12 @@
 		DEC0F640293699630053CE78 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC0F63F293699630053CE78 /* CustomTableViewCell.swift */; };
 		DEC0F6422936A4340053CE78 /* OfertaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC0F6412936A4340053CE78 /* OfertaViewController.swift */; };
 		DEC0F66E29392AD10053CE78 /* QrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC0F66D29392AD10053CE78 /* QrViewController.swift */; };
+		DEC9C03E2947C455005890EC /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C03D2947C455005890EC /* MyCustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE2923672943158A0047A84C /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
 		DE29236F29439EE10047A84C /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
-		DE2923762943BD0E0047A84C /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
-		DE2923772943BD0E0047A84C /* MyCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomTableViewCell.xib; sourceTree = "<group>"; };
 		DE29238B29444A7A0047A84C /* DistritoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoPresenter.swift; sourceTree = "<group>"; };
 		DE29238D29444A940047A84C /* DistritoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoInteractor.swift; sourceTree = "<group>"; };
 		DE29238F29444AA60047A84C /* DistritoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoRouter.swift; sourceTree = "<group>"; };
@@ -57,6 +56,8 @@
 		DE2923E7294501130047A84C /* OfertaEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaEntity.swift; sourceTree = "<group>"; };
 		DE2923E9294501950047A84C /* OfertaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaPresenter.swift; sourceTree = "<group>"; };
 		DE2923EB294502610047A84C /* OfertaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaInteractor.swift; sourceTree = "<group>"; };
+		DE2923EF294793AD0047A84C /* oferta_success_01.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = oferta_success_01.json; sourceTree = "<group>"; };
+		DE2923F1294795CA0047A84C /* OfertaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaResponse.swift; sourceTree = "<group>"; };
 		DE5FE17E293192E000C7E9E8 /* ProyFreeCoupons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyFreeCoupons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5FE181293192E000C7E9E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5FE183293192E000C7E9E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		DEC0F63F293699630053CE78 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		DEC0F6412936A4340053CE78 /* OfertaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewController.swift; sourceTree = "<group>"; };
 		DEC0F66D29392AD10053CE78 /* QrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrViewController.swift; sourceTree = "<group>"; };
+		DEC9C03D2947C455005890EC /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,8 @@
 			children = (
 				DE29239B2944500F0047A84C /* DistritoResponse.swift */,
 				DE2923DB2944EE240047A84C /* distrito_success_01.json */,
+				DE2923EF294793AD0047A84C /* oferta_success_01.json */,
+				DE2923F1294795CA0047A84C /* OfertaResponse.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -193,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				DEC0F6412936A4340053CE78 /* OfertaViewController.swift */,
+				DEC9C03D2947C455005890EC /* MyCustomTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,8 +277,6 @@
 				DEC0F63F293699630053CE78 /* CustomTableViewCell.swift */,
 				DE5FE199293549D100C7E9E8 /* DniViewController.swift */,
 				DEC0F66D29392AD10053CE78 /* QrViewController.swift */,
-				DE2923762943BD0E0047A84C /* MyCustomTableViewCell.swift */,
-				DE2923772943BD0E0047A84C /* MyCustomTableViewCell.xib */,
 			);
 			path = SegundaParteOfertas;
 			sourceTree = "<group>";
@@ -342,13 +345,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE2923792943BD0E0047A84C /* MyCustomTableViewCell.xib in Resources */,
 				DE99121B293BB63C005EBF65 /* ST02.storyboard in Resources */,
 				DE5FE18E293192E100C7E9E8 /* LaunchScreen.storyboard in Resources */,
 				DE6DCDE02942EBE800E4E172 /* MyCustomCollectionViewCell.xib in Resources */,
 				DE5FE18B293192E100C7E9E8 /* Assets.xcassets in Resources */,
 				DE6DCDDA2942E85E00E4E172 /* Main.storyboard in Resources */,
 				DE2923DC2944EE240047A84C /* distrito_success_01.json in Resources */,
+				DE2923F0294793AD0047A84C /* oferta_success_01.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,12 +364,12 @@
 			files = (
 				DE29239929444F040047A84C /* Networking.swift in Sources */,
 				DE29239629444C4A0047A84C /* DistritoEntity.swift in Sources */,
+				DEC9C03E2947C455005890EC /* MyCustomTableViewCell.swift in Sources */,
 				DE29238C29444A7A0047A84C /* DistritoPresenter.swift in Sources */,
 				DEC0F640293699630053CE78 /* CustomTableViewCell.swift in Sources */,
 				DE29239029444AA60047A84C /* DistritoRouter.swift in Sources */,
 				DE29238E29444A940047A84C /* DistritoInteractor.swift in Sources */,
 				DEC0F66E29392AD10053CE78 /* QrViewController.swift in Sources */,
-				DE2923782943BD0E0047A84C /* MyCustomTableViewCell.swift in Sources */,
 				DE5FE19A293549D100C7E9E8 /* DniViewController.swift in Sources */,
 				DE29239C2944500F0047A84C /* DistritoResponse.swift in Sources */,
 				DE6DCDDF2942EBE800E4E172 /* MyCustomCollectionViewCell.swift in Sources */,
@@ -382,6 +385,7 @@
 				DE29239429444AE40047A84C /* DistritoConfigurator.swift in Sources */,
 				DE5FE198293519F400C7E9E8 /* HomeViewController.swift in Sources */,
 				DE2923E62944FF770047A84C /* OfertaConfigurator.swift in Sources */,
+				DE2923F2294795CA0047A84C /* OfertaResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

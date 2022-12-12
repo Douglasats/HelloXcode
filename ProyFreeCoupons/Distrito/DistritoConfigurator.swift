@@ -18,11 +18,12 @@ class DistritoConfigurator {
         
         let myStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let view = myStoryboard.instantiateViewController(withIdentifier: "DistritoViewController") as! DistritoViewController
-        //let router = DistritoRouter(presenter: presenter)
+        let router = DistritoRouter(presenter: presenter)
         
-        //presenter.router = router
+        presenter.router = router
         presenter.interactor = interactor
         presenter.view = view
+        router.view = view
         
         view.presenter = presenter
         
