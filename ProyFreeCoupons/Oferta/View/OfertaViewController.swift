@@ -8,7 +8,6 @@
 import UIKit
 
 protocol OfertaViewProtocol {
-    func obtenerOfertas(_ oferta: [OfertaEntity])
 }
 
 class OfertaViewController: UIViewController {
@@ -30,47 +29,49 @@ class OfertaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-         //tableView.delegate = self*/
-        
-        tableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "mycellTable")
+        tableView.delegate = self
+        tableView.register(UINib(nibName: "OfertaCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "myCellOferta")
         presenter?.pedirOfertas()
-        ofertasFinal = ofertasArray.filter({$0.distrito == presenter?.distrito})
+        titleDistritoLabel.text = presenter?.distrito
+        //ofertasFinal = ofertasArray.filter({$0.distrito == presenter?.distrito})
         //tableView.reloadData()
     }
 }
-
+/*
 extension OfertaViewController: OfertaViewProtocol {
     func obtenerOfertas(_ oferta: [OfertaEntity]) {
         ofertasArray = oferta
         tableView.reloadData()
     }
-}
+}*/
 
 extension OfertaViewController: UITableViewDataSource{
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ofertasFinal.count
+        return presenter?.ofertaCount ?? 0//ofertasFinal.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "mycellTable", for: indexPath) as? MyCustomTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "myCellOferta", for: indexPath) as? OfertaCustomTableViewCell else {
             return UITableViewCell()
         }
-        cell.myIconImage.image = UIImage(named: ofertasFinal[indexPath.row].imgCat)
+        cell.ofertaImage.image = UIImage(named: presenter?.ofertaFinal[indexPath.row].imgCat ?? "") /*ofertasFinal[indexPath.row].imgCat*/
+        cell.ofertaLabel.text = "\(presenter!.ofertaFinal[indexPath.row].categoria) -> \(presenter!.ofertaFinal[indexPath.row].valor)% de dto."
+        //cell.tiendaLabel.text = ofertasFinal[indexPath.row].tienda
         return cell
     }
 }
-    
-/*
-extension ListaViewController: UITableViewDelegate{
+
+extension OfertaViewController: UITableViewDelegate{
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let tienda = tiendas[indexPath.row]
-            guard let dniViewController = storyboard?.instantiateViewController(withIdentifier: "DniViewController") as? DniViewController else {
+            presenter?.getDetail(indexPath.row)
+            print("Estoy haciendo click")
+            /*let tienda = tiendas[indexPath.row]*/
+            /*guard let dniViewController = storyboard?.instantiateViewController(withIdentifier: "DniViewController") as? DniViewController else {
                 return
             }
 
             let nav = UINavigationController(rootViewController: dniViewController)
-            present(nav, animated: true)
+            present(nav, animated: true)*/
         }
 }
-*/

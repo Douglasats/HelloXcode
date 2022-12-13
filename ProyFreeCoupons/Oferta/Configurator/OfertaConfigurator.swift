@@ -17,10 +17,12 @@ class OfertaConfigurator {
         
         let myStoryboard = UIStoryboard(name: "ST02", bundle: nil)
         let view = myStoryboard.instantiateViewController(withIdentifier: "OfertaViewController") as! OfertaViewController
-        
+        let router = OfertaRouter(presenter: presenter)
+        presenter.router = router
         presenter.interactor = interactor
-        presenter.view = view
+        //presenter.view = view
         presenter.nameDistrito = distrito
+        router.view = view
         
         view.presenter = presenter
         
