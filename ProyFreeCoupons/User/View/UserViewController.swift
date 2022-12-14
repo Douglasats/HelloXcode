@@ -7,13 +7,12 @@
 
 import UIKit
 protocol UserViewProtocol{
-    
 }
 
 class UserViewController: UIViewController {
     
     var presenter: UserPresenterProtocol?
-
+    
     @IBOutlet weak var ofertaImage: UIImageView!
     @IBOutlet weak var ofertaLabel: UILabel!
     @IBOutlet weak var tiendaLabel: UILabel!
@@ -34,16 +33,12 @@ class UserViewController: UIViewController {
     }
     
     @IBAction func canjearButton(_ sender: Any) {
+        var user = UserEntity(name: nameTextField.text!,
+                              apellido: apellidoTextField.text!,
+                              email: emailTextField.text!,
+                              cel: celularTextField.text!,
+                              dni: dniTextField.text!)
+        presenter?.obtenerUser(user)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+

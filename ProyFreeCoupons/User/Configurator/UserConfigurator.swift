@@ -15,8 +15,11 @@ class UserConfigurator {
         let myStoryboard = UIStoryboard(name: "ST02", bundle: nil)
         
         let view = myStoryboard.instantiateViewController(withIdentifier: "UserViewController") as! UserViewController
+        let router = UserRouter(presenter: presenter)
         
+        presenter.router = router
         view.presenter = presenter
+        router.view = view
         
         return view
     }

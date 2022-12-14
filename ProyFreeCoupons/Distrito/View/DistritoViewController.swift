@@ -74,7 +74,6 @@ extension DistritoViewController : UICollectionViewDataSource {
     }
 }
 
-
 extension DistritoViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let distrito = distritosArray[indexPath.row].nameDistrito

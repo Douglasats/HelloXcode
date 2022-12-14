@@ -30,7 +30,6 @@ class DistritoMockAPI : RemoteRepository{
             
             do {
                 let data = try Data(contentsOf: url)
-                
                 let decoder = JSONDecoder()
                 let result = try decoder.decode([OfertarResponse].self, from: data)
                 return result

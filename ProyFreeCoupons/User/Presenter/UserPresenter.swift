@@ -8,11 +8,13 @@
 import Foundation
 protocol UserPresenterProtocol {
     var detailEntity: OfertaEntity { get }
+    func obtenerUser(_ user: UserEntity)
 }
 
 class UserPresenter {
     var view: UserViewProtocol?
     var detail: OfertaEntity?
+    var router: UserRouterProtocol?
     
     init(detail: OfertaEntity?) {
         self.detail = detail
@@ -20,8 +22,13 @@ class UserPresenter {
 }
 
 extension UserPresenter: UserPresenterProtocol{
+    
     var detailEntity: OfertaEntity {
         detail!
+    }
+    
+    func obtenerUser(_ user: UserEntity) {
+        router?.irCupon(user, detailEntity)
     }
 }
 
