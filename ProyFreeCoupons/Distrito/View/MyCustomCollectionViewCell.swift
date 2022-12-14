@@ -11,27 +11,18 @@ class MyCustomCollectionViewCell: UICollectionViewCell{
     
     @IBOutlet weak var distritoLabel: UILabel!
     
-    override func awakeFromNib() {
+  override func awakeFromNib() {
         super.awakeFromNib()
-    }
+       round()
+   }
     
     func setup(distrito: DistritoEntity) {
         distritoLabel.text = distrito.nameDistrito
     }
     
     func round() {
-        layer.cornerRadius = bounds.height / 2
+        self.layer.cornerRadius = bounds.height/2
         clipsToBounds = true
-    }
-    
-    func jump() {
-        UIView.animate(withDuration: 0.1, animations: {
-            self.transform = CGAffineTransform(translationX: 10, y: 0)
-        }) {(completion) in
-            UIView.animate(withDuration: 0.1, animations: {
-                self.transform = .identity
-            })
-        }
     }
 
 }

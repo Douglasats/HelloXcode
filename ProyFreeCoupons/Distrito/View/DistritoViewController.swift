@@ -8,20 +8,15 @@
 import UIKit
 import Alamofire
 
-protocol DistritoViewProtocol{
-    func obtenerDistritos(_ distrito: [DistritoEntity])
-}
-
 class DistritoViewController: UIViewController {
     
-    var presenter: DistritoPresenterProtocol?
-    var distritosArray: [DistritoEntity] = []
+    var presenter: DistritoPresenterOutPut?
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = "Distritos"
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib(nibName: "MyCustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "mycell")
@@ -50,35 +45,24 @@ class DistritoViewController: UIViewController {
 
 }
 
-extension DistritoViewController: DistritoViewProtocol {
-
-    func obtenerDistritos(_ distrito: [DistritoEntity]) {
-        distritosArray = distrito
-        collectionView.reloadData()
-        print("Llamando al presenter")
-    }
-}
-
 extension DistritoViewController : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return distritosArray.count
+        return presenter != nil ? presenter!.distritosCount : 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mycell", for: indexPath) as? MyCustomCollectionViewCell else {return UICollectionViewCell()}
-        cell.round()
-        let distrito = distritosArray[indexPath.row]
-        cell.setup(distrito: distrito)
+        if let distrito = presenter?.distritosArray[indexPath.row] {
+            cell.setup(distrito: distrito)
+        }
         return cell
     }
 }
 
 extension DistritoViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let distrito = distritosArray[indexPath.row].nameDistrito
-        presenter?.pedirOfertaDistrito(distrito)
-        print("Estoy haciendo click \(distrito)")
+        presenter?.pedirOfertaDistrito(indexPath.row)
     }
 }
 

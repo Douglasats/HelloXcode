@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol CuponViewProtocol {
-    
-}
-
 class CuponViewController: UIViewController {
     
     var presenter : CuponPresenterProtocol?
@@ -24,30 +20,45 @@ class CuponViewController: UIViewController {
     @IBOutlet weak var descripcionLabel: UILabel!
     @IBOutlet weak var categoriaImage: UIImageView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setup()
+    }
+    
+    @IBAction func finalizarButton(_ sender: Any) {
+        presenter?.finalizar()
+    }
+    
+}
+
+extension CuponViewController : CuponViewProtocol {
+    func setup() {
+        nroCuponLabel.text = presenter?.numCupon
         let dateFormatter = DateFormatter()
         dateFormatter.setLocalizedDateFormatFromTemplate("ddMMyy hh:mm")
         let date = Date()
         fechaLabel.numberOfLines = 0
         fechaLabel.text = dateFormatter.string(from: date)
-        cuponTitleLabel.text = "Felicidades \(presenter?.userCupon?.name) \(presenter?.userCupon?.apellido)!!!"
-        tiendaLabel.text = presenter?.ofertaCupon?.tienda
-        dniLabel.text = presenter?.userCupon?.dni
-        descripcionLabel.text = "\(presenter?.ofertaCupon?.valor)% dto. en \(presenter?.ofertaCupon?.categoria)"
-        categoriaImage.image = UIImage(named: presenter?.ofertaCupon?.imgCat ?? "")
+        if let name = presenter?.userCupon?.name, let apellido = presenter?.userCupon?.apellido {
+            cuponTitleLabel.text = "Felicidades \(name) \(apellido)!!!"
+        }
+        if let tienda = presenter?.ofertaCupon?.tienda, let distrito = presenter?.ofertaCupon?.distrito {
+            tiendaLabel.text = "\(tienda) - \(distrito)"
+        }
+        if let dni = presenter?.userCupon?.dni {
+            dniLabel.text = dni
+        }
+        if let valor = presenter?.ofertaCupon?.valor, let categoria = presenter?.ofertaCupon?.categoria {
+            descripcionLabel.numberOfLines = 0
+            descripcionLabel.text = "\(valor)% dto. en \(categoria)"
+        }
+        if let imgCat = presenter?.ofertaCupon?.imgCat {
+            categoriaImage.image = UIImage(named: imgCat)
+            qrImage.image = UIImage(named: "\(imgCat)Qr")
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

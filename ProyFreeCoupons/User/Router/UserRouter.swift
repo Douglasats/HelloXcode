@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol UserRouterProtocol {
-    func irCupon(_ user: UserEntity,_ oferta: OfertaEntity)
-}
-
 class UserRouter {
     var presenter : UserPresenterProtocol?
     var view: UIViewController?

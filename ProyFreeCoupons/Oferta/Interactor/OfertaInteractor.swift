@@ -7,15 +7,11 @@
 
 import Foundation
 
-protocol OfertaInteractorProtocol {
-    func conseguirOfertas()
-}
-
 class OfertaInteractor {
-    var presenter: OfertaPresenterProtocol?
+    var presenter: OfertaPresenterInPut?
     var api: RemoteRepository?
     
-    required init(presenter: OfertaPresenterProtocol? = nil, api: RemoteRepository? = nil) {
+    required init(presenter: OfertaPresenterInPut? = nil, api: RemoteRepository? = nil) {
         self.presenter = presenter
         self.api = api
     }

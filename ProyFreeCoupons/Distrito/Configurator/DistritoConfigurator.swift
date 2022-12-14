@@ -22,7 +22,6 @@ class DistritoConfigurator {
         
         presenter.router = router
         presenter.interactor = interactor
-        presenter.view = view
         router.view = view
         view.presenter = presenter
         

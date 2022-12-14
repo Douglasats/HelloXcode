@@ -7,15 +7,13 @@
 
 import Foundation
 
-protocol DistritoInteractorProtocol {
-    func conseguirDistritos()
-}
+
 
 class DistritoInteractor {
-    var presenter: DistritoPresenterProtocol?
+    var presenter: DistritoPresenterInPut?
     var api: RemoteRepository?
     
-    required init(presenter: DistritoPresenterProtocol, api: RemoteRepository) {
+    required init(presenter: DistritoPresenterInPut, api: RemoteRepository) {
         self.presenter = presenter
         self.api = api
     }
@@ -23,12 +21,9 @@ class DistritoInteractor {
 
 extension DistritoInteractor: DistritoInteractorProtocol {
     func conseguirDistritos() {
-        print("Conseguir Distritos")
         if let distritos = api?.fetchDistritos(){
             let distritoEntity = DistritoEntity.make(distritos)
             presenter?.entregarDistritos(distritoEntity)
-            print(distritoEntity)
-            print("INTERACTOR")
         }
     }
 }

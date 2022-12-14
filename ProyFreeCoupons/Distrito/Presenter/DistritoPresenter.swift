@@ -7,32 +7,32 @@
 
 import Foundation
 
-protocol DistritoPresenterProtocol {
-    func pedirDistritos()
-    func entregarDistritos(_ distrito: [DistritoEntity])
-    
-    //pedir distrito para ir a otra vista
-    func pedirOfertaDistrito(_ distrito: String)
-}
-
 class DistritoPresenter {
-    var view: DistritoViewProtocol?
     var router: DistritoRouterProtocol?
     var interactor: DistritoInteractorProtocol?
+    var distritos: [DistritoEntity] = []
 }
 
-extension DistritoPresenter: DistritoPresenterProtocol {
-    func pedirOfertaDistrito(_ distrito: String) {
-        router?.obtenerOfertaDistrito(distrito)
+extension DistritoPresenter: DistritoPresenterInPut {
+    func entregarDistritos(_ distrito: [DistritoEntity]) {
+        distritos = distrito
     }
-    
+}
+
+extension DistritoPresenter: DistritoPresenterOutPut {
     func pedirDistritos() {
         interactor?.conseguirDistritos()
     }
-    
-    func entregarDistritos(_ distrito: [DistritoEntity]) {
-        view?.obtenerDistritos(distrito)
+    var distritosArray: [DistritoEntity] {
+        get {
+            distritos
+        }
     }
-
+    var distritosCount: Int {
+        distritos.count
+    }
+    func pedirOfertaDistrito(_ index: Int) {
+        router?.obtenerOfertaDistrito(distritos[index].nameDistrito)
+    }
 }
 

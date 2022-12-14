@@ -14,9 +14,11 @@ class CuponConfigurator {
         let myStoryboard = UIStoryboard(name: "ST02", bundle: nil)
         
         let view = myStoryboard.instantiateViewController(withIdentifier: "CuponViewController") as! CuponViewController
+        let router = CuponRouter(presenter: presenter)
         
+        presenter.router = router
         view.presenter = presenter
-        //view.presenter = presenter
+        router.view = view
         
         return view
     }

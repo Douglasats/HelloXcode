@@ -5,42 +5,35 @@
 //  Created by Douglas Andreus Tafur Saldivar on 10/12/22.
 //
 
-import Foundation
-
-protocol OfertaPresenterProtocol {
-    func pedirOfertas()
-    func entregarOfertas(_ ofertas: [OfertaEntity])
-    var distrito: String {get}
-    var ofertaCount: Int { get }
-    var ofertaFinal: [OfertaEntity] { get }
-    func getDetail(_ index: Int)
-}
+import UIKit
 
 class OfertaPresenter {
-    
     var nameDistrito: String?
     var view: OfertaViewProtocol?
     var interactor: OfertaInteractorProtocol?
     var router: OfertaRouterProtocol?
     var ofertasArray: [OfertaEntity] = []
     var ofertasFinal: [OfertaEntity] = []
+    var ofertasBackUp: [OfertaEntity] = []
 }
 
-extension OfertaPresenter: OfertaPresenterProtocol {
- 
-    var distrito: String {
-        nameDistrito ?? ""
+extension OfertaPresenter: OfertaPresenterInPut {
+    func entregarOfertas(_ ofertas: [OfertaEntity]) {
+        ofertasArray = ofertas
+        ofertasFinal = ofertasArray.filter({$0.distrito == distrito})
+        ofertasBackUp = ofertasFinal
     }
+}
+
+extension OfertaPresenter: OfertaPresenterOutPut {
     
     func pedirOfertas() {
         interactor?.conseguirOfertas()
     }
-    
-    func entregarOfertas(_ ofertas: [OfertaEntity]) {
-        ofertasArray = ofertas
-        ofertasFinal = ofertasArray.filter({$0.distrito == distrito})
-    }
 
+    var distrito: String {
+        nameDistrito ?? ""
+    }
     var ofertaFinal: [OfertaEntity] {
         ofertasFinal
     }
@@ -52,5 +45,17 @@ extension OfertaPresenter: OfertaPresenterProtocol {
     func getDetail(_ index: Int){
         router?.obtenerDetalle(ofertasFinal[index])
     }
+    
+    func oferFilter(_ text: String) {
+        var oferArrayFiltered: [OfertaEntity] = []
+            ofertasFinal.forEach({ value in
+                if value.categoria.lowercased().contains(text.lowercased()) ||
+                    value.tienda.lowercased().contains(text.lowercased()){
+                    oferArrayFiltered.append(value)
+                }
+            })
+            ofertasFinal = (text.count > 0) ? oferArrayFiltered : ofertasBackUp
+    }
 }
+
 

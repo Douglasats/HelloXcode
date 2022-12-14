@@ -16,14 +16,18 @@ class OfertaCustomTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         ofertaLabel.numberOfLines = 0
-    }
 
+    }
+    
+    func setup(_ oferta: OfertaEntity){
+        ofertaImage.image = UIImage(named: oferta.imgCat)
+        ofertaLabel.text = "\(oferta.categoria) -> \(oferta.valor)% de dto."
+        tiendaLabel.text = oferta.tienda
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }

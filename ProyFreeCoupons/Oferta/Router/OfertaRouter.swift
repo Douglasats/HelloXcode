@@ -7,15 +7,11 @@
 
 import UIKit
 
-protocol OfertaRouterProtocol {
-    func obtenerDetalle(_ oferta: OfertaEntity)
-}
-
 class OfertaRouter {
-    let presenter: OfertaPresenterProtocol?
+    let presenter: OfertaPresenterOutPut?
     var view: UIViewController?
     
-    required init(presenter: OfertaPresenterProtocol?) {
+    required init(presenter: OfertaPresenterOutPut?) {
         self.presenter = presenter
     }
 }

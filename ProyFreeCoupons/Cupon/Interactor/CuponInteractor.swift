@@ -6,6 +6,3 @@
 //
 
 import Foundation
-protocol CuponInteractorProtocol {}
-
-class CuponInteractor {}

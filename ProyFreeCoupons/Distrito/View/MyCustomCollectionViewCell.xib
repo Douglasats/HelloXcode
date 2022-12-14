@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,18 +20,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="133" height="51"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvE-Dl-G69">
-                                <rect key="frame" x="10" y="10" width="113" height="31"/>
+                                <rect key="frame" x="10" y="15.333333333333334" width="113" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.77647058823529413" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" red="1" green="0.77647058823529413" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KvE-Dl-G69" firstAttribute="leading" secondItem="zxW-R1-abW" secondAttribute="leading" constant="10" id="AIH-bg-X7R"/>
                             <constraint firstAttribute="trailing" secondItem="KvE-Dl-G69" secondAttribute="trailing" constant="10" id="RVr-dz-Swr"/>
-                            <constraint firstItem="KvE-Dl-G69" firstAttribute="top" secondItem="zxW-R1-abW" secondAttribute="top" constant="10" id="U23-co-an9"/>
-                            <constraint firstAttribute="bottom" secondItem="KvE-Dl-G69" secondAttribute="bottom" constant="10" id="v6s-j7-Xcu"/>
+                            <constraint firstItem="KvE-Dl-G69" firstAttribute="centerY" secondItem="zxW-R1-abW" secondAttribute="centerY" id="dJv-Bx-e75"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -51,9 +49,4 @@
             <point key="canvasLocation" x="199.23664122137404" y="21.47887323943662"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

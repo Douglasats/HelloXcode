@@ -6,8 +6,6 @@
 //
 
 import UIKit
-protocol UserViewProtocol{
-}
 
 class UserViewController: UIViewController {
     
@@ -26,6 +24,7 @@ class UserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Formulario"
         ofertaImage.image = UIImage(named: (presenter?.detailEntity.imgCat)!)
         ofertaLabel.text = "\(presenter!.detailEntity.categoria) (\(presenter!.detailEntity.valor)% dto.)"
         tiendaLabel.text = presenter?.detailEntity.tienda
@@ -33,7 +32,7 @@ class UserViewController: UIViewController {
     }
     
     @IBAction func canjearButton(_ sender: Any) {
-        var user = UserEntity(name: nameTextField.text!,
+        let user = UserEntity(name: nameTextField.text!,
                               apellido: apellidoTextField.text!,
                               email: emailTextField.text!,
                               cel: celularTextField.text!,

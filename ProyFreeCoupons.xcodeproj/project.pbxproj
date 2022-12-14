@@ -50,6 +50,10 @@
 		DEC9C07829491D7E005890EC /* CuponPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C07729491D7E005890EC /* CuponPresenter.swift */; };
 		DEC9C07B29491DC6005890EC /* CuponRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C07A29491DC6005890EC /* CuponRouter.swift */; };
 		DEC9C07E29491DEB005890EC /* CuponInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C07D29491DEB005890EC /* CuponInteractor.swift */; };
+		DEC9C081294A81C6005890EC /* DistritoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C080294A81C6005890EC /* DistritoProtocols.swift */; };
+		DEC9C084294A8249005890EC /* OfertaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C083294A8249005890EC /* OfertaProtocols.swift */; };
+		DEC9C087294A849D005890EC /* UserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C086294A849D005890EC /* UserProtocols.swift */; };
+		DEC9C08A294A852C005890EC /* CuponProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C089294A852C005890EC /* CuponProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +101,10 @@
 		DEC9C07729491D7E005890EC /* CuponPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponPresenter.swift; sourceTree = "<group>"; };
 		DEC9C07A29491DC6005890EC /* CuponRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponRouter.swift; sourceTree = "<group>"; };
 		DEC9C07D29491DEB005890EC /* CuponInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponInteractor.swift; sourceTree = "<group>"; };
+		DEC9C080294A81C6005890EC /* DistritoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoProtocols.swift; sourceTree = "<group>"; };
+		DEC9C083294A8249005890EC /* OfertaProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaProtocols.swift; sourceTree = "<group>"; };
+		DEC9C086294A849D005890EC /* UserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocols.swift; sourceTree = "<group>"; };
+		DEC9C089294A852C005890EC /* CuponProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,7 @@
 		DE29238A294449580047A84C /* Distrito */ = {
 			isa = PBXGroup;
 			children = (
+				DEC9C07F294A81B4005890EC /* Protocols */,
 				DE2923752943A5140047A84C /* Entity */,
 				DE2923742943A5070047A84C /* Router */,
 				DE2923732943A4FD0047A84C /* Interactor */,
@@ -205,6 +214,7 @@
 		DE2923DD2944FF160047A84C /* Oferta */ = {
 			isa = PBXGroup;
 			children = (
+				DEC9C082294A8238005890EC /* Protocols */,
 				DE2923E42944FF580047A84C /* Entity */,
 				DE2923E32944FF510047A84C /* Router */,
 				DE2923E22944FF4A0047A84C /* Interactor */,
@@ -325,6 +335,7 @@
 		DEC9C0592948E59F005890EC /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DEC9C085294A848B005890EC /* Protocols */,
 				DEC9C05D2948E5C9005890EC /* Interactor */,
 				DEC9C05C2948E5C1005890EC /* Presenter */,
 				DEC9C05A2948E5B0005890EC /* Entity */,
@@ -385,6 +396,7 @@
 		DEC9C06C29491993005890EC /* Cupon */ = {
 			isa = PBXGroup;
 			children = (
+				DEC9C088294A8521005890EC /* Protocols */,
 				DEC9C071294919BE005890EC /* Entity */,
 				DEC9C070294919B3005890EC /* Router */,
 				DEC9C06E294919A6005890EC /* Interactor */,
@@ -440,6 +452,38 @@
 				DEC9C073294919E2005890EC /* CuponConfigurator.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DEC9C07F294A81B4005890EC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C080294A81C6005890EC /* DistritoProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DEC9C082294A8238005890EC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C083294A8249005890EC /* OfertaProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DEC9C085294A848B005890EC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C086294A849D005890EC /* UserProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DEC9C088294A8521005890EC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C089294A852C005890EC /* CuponProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -529,6 +573,8 @@
 				DEC9C074294919E2005890EC /* CuponConfigurator.swift in Sources */,
 				DE29239629444C4A0047A84C /* DistritoEntity.swift in Sources */,
 				DE29238C29444A7A0047A84C /* DistritoPresenter.swift in Sources */,
+				DEC9C081294A81C6005890EC /* DistritoProtocols.swift in Sources */,
+				DEC9C084294A8249005890EC /* OfertaProtocols.swift in Sources */,
 				DE29239029444AA60047A84C /* DistritoRouter.swift in Sources */,
 				DE29238E29444A940047A84C /* DistritoInteractor.swift in Sources */,
 				DEC0F66E29392AD10053CE78 /* QrViewController.swift in Sources */,
@@ -547,7 +593,9 @@
 				DEC9C0632948E627005890EC /* UserConfigurator.swift in Sources */,
 				DE2923682943158A0047A84C /* NetworkingProvider.swift in Sources */,
 				DE5FE182293192E000C7E9E8 /* AppDelegate.swift in Sources */,
+				DEC9C08A294A852C005890EC /* CuponProtocols.swift in Sources */,
 				DE2923EA294501950047A84C /* OfertaPresenter.swift in Sources */,
+				DEC9C087294A849D005890EC /* UserProtocols.swift in Sources */,
 				DE2923EC294502610047A84C /* OfertaInteractor.swift in Sources */,
 				DEC9C07629491A76005890EC /* CuponViewController.swift in Sources */,
 				DE6DCDDC2942EA3F00E4E172 /* DistritoViewController.swift in Sources */,

@@ -6,11 +6,6 @@
 //
 
 import Foundation
-protocol CuponPresenterProtocol {
-    var userCupon: UserEntity? { get }
-    var ofertaCupon: OfertaEntity? { get }
-    
-}
 
 class CuponPresenter {
     var view: CuponViewProtocol?
@@ -26,6 +21,7 @@ class CuponPresenter {
 }
 
 extension CuponPresenter: CuponPresenterProtocol {
+    
     var userCupon: UserEntity? {
         user
     }
@@ -33,4 +29,13 @@ extension CuponPresenter: CuponPresenterProtocol {
     var ofertaCupon: OfertaEntity? {
         oferta
     }
+    
+    var numCupon: String? {
+    String(Int.random(in: 0..<10000))
+    }
+    
+    func finalizar(){
+        router?.goHome()
+    }
 }
+
