@@ -20,7 +20,8 @@ class DistritoRouter{
 extension DistritoRouter: DistritoRouterProtocol {
     func obtenerOfertaDistrito(_ distrito: String) {
         let ofertaViewController = OfertaConfigurator.makeList(distrito)
-        view?.show(ofertaViewController, sender: nil)
+        view?.navigationController?.pushViewController(ofertaViewController, animated: true)
+        
     }
 }
 

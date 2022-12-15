@@ -9,7 +9,7 @@ import UIKit
 
 class OfertaPresenter {
     var nameDistrito: String?
-    var view: OfertaViewProtocol?
+    weak var view: OfertaViewProtocol?
     var interactor: OfertaInteractorProtocol?
     var router: OfertaRouterProtocol?
     var ofertasArray: [OfertaEntity] = []

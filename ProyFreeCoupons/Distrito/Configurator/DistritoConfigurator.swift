@@ -12,14 +12,12 @@ class DistritoConfigurator {
     static func makeList() -> UIViewController{
         
         let presenter = DistritoPresenter()
-        let api = DistritoMockAPI()
-        
+        let api = DistritoMockAPI()        
         let interactor = DistritoInteractor(presenter: presenter, api: api)
         
-        let myStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myStoryboard = UIStoryboard(name: "DistritoViewController", bundle: nil)
         let view = myStoryboard.instantiateViewController(withIdentifier: "DistritoViewController") as! DistritoViewController
         let router = DistritoRouter(presenter: presenter)
-        
         presenter.router = router
         presenter.interactor = interactor
         router.view = view

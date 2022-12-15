@@ -9,17 +9,16 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var empezarButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Inicie")
+        navigationController?.isNavigationBarHidden = true
+        empezarButton.round()
     }
 
     @IBAction func irDistritoButton(_ sender: Any) {
-        
+        navigationController?.isNavigationBarHidden = false
         let distritoViewController = DistritoConfigurator.makeList()
-        //guard let distritoViewController = storyboard?.instantiateViewController(withIdentifier: "DistritoViewController") as? DistritoViewController else {return}
-        
-        //navigationController?.pushViewController(distritoViewController, animated: true)
-        show(distritoViewController, sender: nil)
+        navigationController?.pushViewController(distritoViewController, animated: true)
     }
 }

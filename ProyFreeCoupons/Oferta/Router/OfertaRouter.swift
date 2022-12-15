@@ -19,7 +19,7 @@ class OfertaRouter {
 extension OfertaRouter: OfertaRouterProtocol {
     func obtenerDetalle(_ oferta: OfertaEntity) {
         let userViewController = UserConfigurator.make(oferta)
-        view?.show(userViewController, sender: nil)
+        view?.navigationController?.pushViewController(userViewController, animated: true)
     }
 }
 

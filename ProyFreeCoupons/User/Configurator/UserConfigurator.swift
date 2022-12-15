@@ -12,7 +12,7 @@ class UserConfigurator {
         
         let presenter = UserPresenter(detail: oferta)
         
-        let myStoryboard = UIStoryboard(name: "ST02", bundle: nil)
+        let myStoryboard = UIStoryboard(name: "UserViewController", bundle: nil)
         
         let view = myStoryboard.instantiateViewController(withIdentifier: "UserViewController") as! UserViewController
         let router = UserRouter(presenter: presenter)

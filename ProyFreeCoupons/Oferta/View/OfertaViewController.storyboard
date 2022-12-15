@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Oferta View Controller-->
+        <scene sceneID="QD2-OQ-mzt">
+            <objects>
+                <viewController storyboardIdentifier="OfertaViewController" id="Gb3-bH-2jm" customClass="OfertaViewController" customModule="ProyFreeCoupons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jd1-Mg-2ZF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mp5-yF-mXB">
+                                <rect key="frame" x="0.0" y="165" width="393" height="653"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a1h-Nj-D9v">
+                                <rect key="frame" x="16" y="115" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Distrito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wby-4i-jIN">
+                                <rect key="frame" x="16" y="75" width="361" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.77647058823529413" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hlD-am-imb"/>
+                        <color key="backgroundColor" red="1" green="0.77647058820000003" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hlD-am-imb" firstAttribute="trailing" secondItem="a1h-Nj-D9v" secondAttribute="trailing" constant="16" id="0ZZ-6O-LGA"/>
+                            <constraint firstItem="Mp5-yF-mXB" firstAttribute="bottom" secondItem="hlD-am-imb" secondAttribute="bottom" id="4CJ-Ow-GFJ"/>
+                            <constraint firstItem="wby-4i-jIN" firstAttribute="top" secondItem="hlD-am-imb" secondAttribute="top" constant="16" id="6Lb-sh-cxr"/>
+                            <constraint firstItem="Mp5-yF-mXB" firstAttribute="top" secondItem="a1h-Nj-D9v" secondAttribute="bottom" constant="16" id="Bh4-m7-8zX"/>
+                            <constraint firstItem="wby-4i-jIN" firstAttribute="leading" secondItem="hlD-am-imb" secondAttribute="leading" constant="16" id="Fhq-BV-RdZ"/>
+                            <constraint firstItem="Mp5-yF-mXB" firstAttribute="top" secondItem="hlD-am-imb" secondAttribute="top" priority="750" id="S2t-m9-xHF"/>
+                            <constraint firstItem="a1h-Nj-D9v" firstAttribute="top" secondItem="wby-4i-jIN" secondAttribute="bottom" constant="16" id="TAK-Dr-quz"/>
+                            <constraint firstItem="Mp5-yF-mXB" firstAttribute="leading" secondItem="hlD-am-imb" secondAttribute="leading" id="Tm3-v0-inh"/>
+                            <constraint firstItem="Mp5-yF-mXB" firstAttribute="trailing" secondItem="hlD-am-imb" secondAttribute="trailing" id="W6V-Ad-xi7"/>
+                            <constraint firstItem="Mp5-yF-mXB" firstAttribute="bottom" secondItem="hlD-am-imb" secondAttribute="bottom" id="bnJ-Yb-oSB"/>
+                            <constraint firstItem="a1h-Nj-D9v" firstAttribute="leading" secondItem="hlD-am-imb" secondAttribute="leading" constant="16" id="gKQ-7Q-Hcy"/>
+                            <constraint firstItem="hlD-am-imb" firstAttribute="trailing" secondItem="wby-4i-jIN" secondAttribute="trailing" constant="16" id="pvM-AN-dyE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchTextField" destination="a1h-Nj-D9v" id="QTZ-pc-jR6"/>
+                        <outlet property="tableView" destination="Mp5-yF-mXB" id="Jax-fO-e1j"/>
+                        <outlet property="titleDistritoLabel" destination="wby-4i-jIN" id="AZs-Eq-8mQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1mp-Hc-wed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="-113"/>
+        </scene>
+    </scenes>
+</document>

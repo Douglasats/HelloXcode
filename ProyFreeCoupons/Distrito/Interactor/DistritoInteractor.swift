@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 class DistritoInteractor {
     var presenter: DistritoPresenterInPut?
     var api: RemoteRepository?

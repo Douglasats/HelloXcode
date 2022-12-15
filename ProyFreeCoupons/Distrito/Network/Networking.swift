@@ -6,6 +6,7 @@
 //
 
 import Foundation
+//import Alamofire
 
 protocol RemoteRepository {
     func fetchDistritos() -> [DistritoResponse]
@@ -13,14 +14,23 @@ protocol RemoteRepository {
 }
 
 class DistritoSocialAPI : RemoteRepository{
+//    let kBaseUrl = "https://demo0607784.mockable.io/"
+//    let kStatusOk = 200...299
     func fetchOfertas() -> [OfertarResponse] {
         []
     }
-    
-    func fetchDistritos() -> [DistritoResponse] {
-        []
-    }
-    
+//
+   func fetchDistritos() -> [DistritoResponse] {
+//        let url = "\(kBaseUrl)distritos"
+//        AF.request(url, method: .get).validate(statusCode: kStatusOk).responseDecodable (of: [DistritoResponse].self){response in
+//            if let distrito = response.value {
+//                print(distrito)
+//            } else {
+//                print(response.error?.responseCode ?? "No error")
+//            }
+//        }
+       return []
+   }
 }
 
 class DistritoMockAPI : RemoteRepository{
@@ -58,3 +68,46 @@ class DistritoMockAPI : RemoteRepository{
     }
 }
 
+/*
+final class NetworkintgProvider {
+    static let shared = NetworkintgProvider()
+
+    private let kBaseUrl = "https://demo0607784.mockable.io/"
+    private let kStatusOk = 200...299
+    
+    func getData(){
+        let url = "\(kBaseUrl)distritos"
+        
+        AF.request(url, method: .get).validate(statusCode: kStatusOk).responseDecodable (of: [Distrito].self){response in
+            
+            if let distrito = response.value{
+                print(distrito)
+                
+            } else {
+                print(response.error?.responseCode ?? "No error")
+            }
+        }
+    }
+
+}*/
+
+
+/*private func getData(){
+    let kBaseUrl = "https://demo0607784.mockable.io/"
+    let kStatusOk = 200...299
+    let url = "\(kBaseUrl)distritos"
+    
+    AF.request(url, method: .get).validate(statusCode: kStatusOk).responseDecodable (of: [Distrito].self){response in
+        
+        if let distrito = response.value{
+            print(distrito)
+            
+        } else {
+            print(response.error?.responseCode ?? "No error")
+        }
+        self.distritos = response.value ?? []
+        self.collectionView.reloadData()
+        
+        print(self.distritos)
+    }
+}*/

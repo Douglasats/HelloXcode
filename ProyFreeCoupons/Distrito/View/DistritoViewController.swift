@@ -22,26 +22,6 @@ class DistritoViewController: UIViewController {
         collectionView.register(UINib(nibName: "MyCustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "mycell")
         presenter?.pedirDistritos()
     }
-    
-    /*private func getData(){
-        let kBaseUrl = "https://demo0607784.mockable.io/"
-        let kStatusOk = 200...299
-        let url = "\(kBaseUrl)distritos"
-        
-        AF.request(url, method: .get).validate(statusCode: kStatusOk).responseDecodable (of: [Distrito].self){response in
-            
-            if let distrito = response.value{
-                print(distrito)
-                
-            } else {
-                print(response.error?.responseCode ?? "No error")
-            }
-            self.distritos = response.value ?? []
-            self.collectionView.reloadData()
-            
-            print(self.distritos)
-        }
-    }*/
 
 }
 

@@ -11,7 +11,7 @@ protocol OfertaRouterProtocol {
     func obtenerDetalle(_ oferta: OfertaEntity)
 }
 
-protocol OfertaInteractorProtocol {
+protocol OfertaInteractorProtocol: AnyObject {
     func conseguirOfertas()
 }
 
@@ -27,5 +27,8 @@ protocol OfertaPresenterOutPut {
     func getDetail(_ index: Int)
     func oferFilter(_ text: String)
     
+}
+
+protocol OfertaViewProtocol: AnyObject {
 }
 

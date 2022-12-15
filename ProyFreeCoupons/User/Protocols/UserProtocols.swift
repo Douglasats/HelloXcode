@@ -12,6 +12,6 @@ protocol UserPresenterProtocol {
     func obtenerUser(_ user: UserEntity)
 }
 
-protocol UserRouterProtocol {
+protocol UserRouterProtocol: AnyObject {
     func irCupon(_ user: UserEntity,_ oferta: OfertaEntity)
 }

@@ -20,6 +20,7 @@ class UserRouter {
 extension UserRouter: UserRouterProtocol {
     func irCupon(_ user: UserEntity,_ oferta: OfertaEntity) {
         let cuponViewController = CuponConfigurator.make(user, oferta)
-        view?.show(cuponViewController, sender: nil)
+        view?.navigationController?.pushViewController(cuponViewController, animated: true)
+        //view?.show(cuponViewController, sender: nil)
     }
 }

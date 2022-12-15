@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol DistritoRouterProtocol{
+protocol DistritoRouterProtocol: AnyObject{
     func obtenerOfertaDistrito(_ distrito: String)
 }
 
-protocol DistritoInteractorProtocol {
+protocol DistritoInteractorProtocol: AnyObject {
     func conseguirDistritos()
 }
 

@@ -7,9 +7,6 @@
 
 import UIKit
 
-protocol OfertaViewProtocol {
-}
-
 class OfertaViewController: UIViewController {
     
     var presenter: OfertaPresenterOutPut?

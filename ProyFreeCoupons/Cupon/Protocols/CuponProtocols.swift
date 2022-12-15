@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol CuponRouterProtocol {
+protocol CuponRouterProtocol: AnyObject {
     func goHome()
 }
 
@@ -18,7 +18,4 @@ protocol CuponPresenterProtocol {
     func finalizar()
 }
 
-protocol CuponViewProtocol {
-    func setup()
-}
 

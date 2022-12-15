@@ -17,13 +17,14 @@ class OfertaCustomTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         ofertaLabel.numberOfLines = 0
+        tiendaLabel.numberOfLines = 0
 
     }
     
     func setup(_ oferta: OfertaEntity){
         ofertaImage.image = UIImage(named: oferta.imgCat)
         ofertaLabel.text = "\(oferta.categoria) -> \(oferta.valor)% de dto."
-        tiendaLabel.text = oferta.tienda
+        tiendaLabel.text = "\(oferta.tienda) - \(oferta.direccion)"
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

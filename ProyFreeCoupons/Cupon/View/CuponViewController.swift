@@ -10,7 +10,7 @@ import UIKit
 class CuponViewController: UIViewController {
     
     var presenter : CuponPresenterProtocol?
-
+    
     @IBOutlet weak var cuponTitleLabel: UILabel!
     @IBOutlet weak var qrImage: UIImageView!
     @IBOutlet weak var nroCuponLabel: UILabel!
@@ -19,7 +19,7 @@ class CuponViewController: UIViewController {
     @IBOutlet weak var fechaLabel: UILabel!
     @IBOutlet weak var descripcionLabel: UILabel!
     @IBOutlet weak var categoriaImage: UIImageView!
-    
+    @IBOutlet weak var finalizarButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -31,10 +31,12 @@ class CuponViewController: UIViewController {
         presenter?.finalizar()
     }
     
-}
-
-extension CuponViewController : CuponViewProtocol {
-    func setup() {
+    private func setup() {
+        navigationController?.isNavigationBarHidden = true
+        cuponTitleLabel.numberOfLines = 0
+        tiendaLabel.numberOfLines = 0
+        finalizarButton.round()
+        finalizarButton.shine()
         nroCuponLabel.text = presenter?.numCupon
         let dateFormatter = DateFormatter()
         dateFormatter.setLocalizedDateFormatFromTemplate("ddMMyy hh:mm")
@@ -44,8 +46,8 @@ extension CuponViewController : CuponViewProtocol {
         if let name = presenter?.userCupon?.name, let apellido = presenter?.userCupon?.apellido {
             cuponTitleLabel.text = "Felicidades \(name) \(apellido)!!!"
         }
-        if let tienda = presenter?.ofertaCupon?.tienda, let distrito = presenter?.ofertaCupon?.distrito {
-            tiendaLabel.text = "\(tienda) - \(distrito)"
+        if let tienda = presenter?.ofertaCupon?.tienda, let distrito = presenter?.ofertaCupon?.distrito , let direccion = presenter?.ofertaCupon?.direccion{
+            tiendaLabel.text = "\(tienda) - \(distrito) - \(direccion)"
         }
         if let dni = presenter?.userCupon?.dni {
             dniLabel.text = dni
@@ -59,6 +61,5 @@ extension CuponViewController : CuponViewProtocol {
             qrImage.image = UIImage(named: "\(imgCat)Qr")
         }
     }
-    
-    
 }
+    

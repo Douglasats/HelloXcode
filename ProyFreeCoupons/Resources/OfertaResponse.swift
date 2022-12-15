@@ -13,4 +13,5 @@ struct OfertarResponse : Decodable{
     let imgCat: String
     let tienda: String
     let distrito: String
+    let direccion: String
 }

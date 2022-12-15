@@ -8,7 +8,6 @@
 import Foundation
 
 class CuponPresenter {
-    var view: CuponViewProtocol?
     var router: CuponRouterProtocol?
     var user: UserEntity?
     var oferta: OfertaEntity?

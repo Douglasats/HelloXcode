@@ -4,69 +4,87 @@
         "categoria":"Snacks",
         "imgCat":"Cheaps",
         "tienda":"Tambo",
-        "distrito":"Los Olivos"
+        "distrito":"Los Olivos",
+        "direccion":"Av. Las Palmeras 3818"
+    },
+    {
+        "valor": 15,
+        "categoria":"Pollos a la brasa",
+        "imgCat":"Chicken",
+        "tienda":"Tambo",
+        "distrito":"Los Olivos",
+        "direccion":"Av. Las Palmeras 3818"
     },
     {
         "valor": 15,
         "categoria":"Cervezas",
         "imgCat":"Beer",
         "tienda":"Tambo",
-        "distrito":"Los Olivos"
+        "distrito":"Los Olivos",
+        "direccion":"Av. Angélica Gamarra 817"
     },
     {
         "valor": 20,
         "categoria":"Bebidas Alcholicas",
         "imgCat":"Drink",
         "tienda":"Mass",
-        "distrito":"Los Olivos"
+        "distrito":"Los Olivos",
+        "direccion":"Av. Carlos Izaguirre 1113"
     },
     {
         "valor": 30,
         "categoria":"Pizza's",
         "imgCat":"Pizza",
         "tienda":"Oxxo",
-        "distrito":"Los Olivos"
+        "distrito":"Los Olivos",
+        "direccion":"Av. Universitaria Mz. B"
     },
     {
         "valor": 10,
         "categoria":"Snacks",
         "imgCat":"Cheaps",
         "tienda":"Tambo",
-        "distrito":"San Miguel"
+        "distrito":"San Miguel",
+        "direccion":"Av. Rafael Escardó 115"
     },
     {
         "valor": 15,
         "categoria":"Cervezas",
         "imgCat":"Beer",
         "tienda":"Tambo",
-        "distrito":"San Miguel"
+        "distrito":"San Miguel",
+        "direccion":"Av. Lima 701"
     },
     {
         "valor": 20,
         "categoria":"Bebidas Alcholicas",
         "imgCat":"Drink",
         "tienda":"Mass",
-        "distrito":"San Miguel"
+        "distrito":"San Miguel",
+        "direccion":"Av. Universitaria 2029"
     },
     {
         "valor": 30,
         "categoria":"Pollos a la brasa",
         "imgCat":"Chicken",
         "tienda":"Oxxo",
-        "distrito":"Magdalena"
+        "distrito":"Magdalena",
+        "direccion":"Av. Javier Prado Oeste 490"
     },
     {
         "valor": 25,
         "categoria":"Yogurt's",
         "imgCat":"Milk",
         "tienda":"Oxxo",
-        "distrito":"Magdalena"
+        "distrito":"Magdalena",
+        "direccion":"Av. Javier Prado Oeste 490"
     },
     {
         "valor": 15,
         "categoria":"Pizza's",
         "imgCat":"Pizza",
         "tienda":"Tambo",
-        "distrito":"Magdalena"
-    },
+        "distrito":"Magdalena",
+        "direccion":"Av. del Ejército 290"
+    }
 ]
