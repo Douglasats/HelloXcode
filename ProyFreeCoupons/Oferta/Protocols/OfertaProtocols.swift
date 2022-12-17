@@ -19,14 +19,13 @@ protocol OfertaPresenterInPut {
     func entregarOfertas(_ ofertas: [OfertaEntity])
 }
 
-protocol OfertaPresenterOutPut {
+protocol OfertaPresenterOutPut: AnyObject {
     func pedirOfertas()
     var distrito: String {get}
     var ofertaCount: Int { get }
     var ofertaFinal: [OfertaEntity] { get }
     func getDetail(_ index: Int)
     func oferFilter(_ text: String)
-    
 }
 
 protocol OfertaViewProtocol: AnyObject {

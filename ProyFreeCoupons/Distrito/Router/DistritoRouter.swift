@@ -9,8 +9,8 @@ import UIKit
 
 class DistritoRouter{
     
-    let presenter: DistritoPresenterOutPut?
-    var view: UIViewController?
+    unowned let presenter: DistritoPresenterOutPut?
+    weak var view: UIViewController?
     
     required init(presenter: DistritoPresenterOutPut?) {
         self.presenter = presenter

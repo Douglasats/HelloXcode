@@ -50,11 +50,11 @@ extension OfertaPresenter: OfertaPresenterOutPut {
         var oferArrayFiltered: [OfertaEntity] = []
             ofertasFinal.forEach({ value in
                 if value.categoria.lowercased().contains(text.lowercased()) ||
-                    value.tienda.lowercased().contains(text.lowercased()){
+                    value.tienda.lowercased().contains(text.lowercased()) || value.direccion.lowercased().contains(text.lowercased()){
                     oferArrayFiltered.append(value)
                 }
             })
-            ofertasFinal = (text.count > 0) ? oferArrayFiltered : ofertasBackUp
+        ofertasFinal = (text.count > 0) ? oferArrayFiltered : ofertasBackUp
     }
 }
 

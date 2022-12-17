@@ -8,7 +8,7 @@
 import Foundation
 //import Alamofire
 
-protocol RemoteRepository {
+protocol RemoteRepository: AnyObject {
     func fetchDistritos() -> [DistritoResponse]
     func fetchOfertas() -> [OfertarResponse]
 }

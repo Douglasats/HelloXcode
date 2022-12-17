@@ -285,12 +285,12 @@
 				DE2923DD2944FF160047A84C /* Oferta */,
 				DE29238A294449580047A84C /* Distrito */,
 				DEC9C099294BBB58005890EC /* Home */,
-				DE5FE181293192E000C7E9E8 /* AppDelegate.swift */,
-				DE5FE183293192E000C7E9E8 /* SceneDelegate.swift */,
-				DE5FE18A293192E100C7E9E8 /* Assets.xcassets */,
 				DEC9C094294A8BE8005890EC /* Suporting Files */,
 				DEC9C093294A8BD4005890EC /* Launch */,
 				DE29236C29439E960047A84C /* Util */,
+				DE5FE181293192E000C7E9E8 /* AppDelegate.swift */,
+				DE5FE183293192E000C7E9E8 /* SceneDelegate.swift */,
+				DE5FE18A293192E100C7E9E8 /* Assets.xcassets */,
 			);
 			path = ProyFreeCoupons;
 			sourceTree = "<group>";

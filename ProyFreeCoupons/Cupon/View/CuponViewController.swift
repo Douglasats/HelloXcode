@@ -37,7 +37,7 @@ class CuponViewController: UIViewController {
         tiendaLabel.numberOfLines = 0
         finalizarButton.round()
         finalizarButton.shine()
-        nroCuponLabel.text = presenter?.numCupon
+        nroCuponLabel.text = "#\(presenter?.numCupon ?? "")"
         let dateFormatter = DateFormatter()
         dateFormatter.setLocalizedDateFormatFromTemplate("ddMMyy hh:mm")
         let date = Date()

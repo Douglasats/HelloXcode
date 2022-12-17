@@ -7,7 +7,9 @@
 
 import UIKit
 
-class UserViewController: UIViewController {
+class UserViewController: UITableViewController {
+    
+//    @IBOutlet weak var tableView: UITableView!
     
     var presenter: UserPresenterProtocol?
     
@@ -46,26 +48,21 @@ class UserViewController: UIViewController {
         presenter?.obtenerUser(user)
     }
     
-    
-    
     @IBAction func celularChanged(_ sender: Any) {
         if let numeroCelular = celularTextField.text {
-            if let errorMsg = invalidCelular(numeroCelular){
-                celularError.text = errorMsg
-                celularError.isHidden = false
-                celularError.textColor = .orange
-            } else {
-                celularError.isHidden = true
-            }
-        }
-        checkForValidForm()
+                   if let errorMsg = invalidCelular(numeroCelular){
+                       celularError.text = errorMsg
+                       celularError.isHidden = false
+                       celularError.textColor = .orange
+                   } else {
+                       celularError.isHidden = true
+                   }
+               }
+               checkForValidForm()
     }
+
     private func invalidCelular(_ value: String) -> String?
     {
-        //let set = CharacterSet(charactersIn: value)
-//        if !CharacterSet.decimalDigits.isSuperset(of: set){
-//            return "N° Celular solo debe tener números"
-//        }
         let regularExpression = "[0-9 ]*"
         let predicate = NSPredicate(format: "SELF MATCHES %@", regularExpression)
         if !predicate.evaluate(with: value){
@@ -92,10 +89,6 @@ class UserViewController: UIViewController {
     
     private func invalidDni(_ value: String) -> String?
     {
-        //let set = CharacterSet(charactersIn: value)
-//        if !CharacterSet.decimalDigits.isSuperset(of: set){
-//            return "N° Celular solo debe tener números"
-//        }
         let regularExpression = "[0-9 ]*"
         let predicate = NSPredicate(format: "SELF MATCHES %@", regularExpression)
         if !predicate.evaluate(with: value){
@@ -135,7 +128,9 @@ class UserViewController: UIViewController {
     }
     
     
-    @IBAction func apellidoChanged(_ sender: Any) {
+    
+    
+    @IBAction func apellidoChangued(_ sender: Any) {
         if let apellido = apellidoTextField.text {
             if let errorMsg = invalidApellido(apellido){
                 apellidoError.text = errorMsg
@@ -160,7 +155,7 @@ class UserViewController: UIViewController {
         return nil
     }
     
-    @IBAction func nombreChanged(_ sender: Any) {
+    @IBAction func nombreChangued(_ sender: Any) {
         if let name = nameTextField.text {
             if let errorMsg = invalidName(name){
                 nameError.text = errorMsg
@@ -226,7 +221,9 @@ class UserViewController: UIViewController {
         if let categoria = presenter?.detailEntity.categoria, let valor = presenter?.detailEntity.valor{
             ofertaLabel.text = "\(categoria) \(valor)% dto."
         }
-        tiendaLabel.text = presenter?.detailEntity.tienda
+        if let tienda = presenter?.detailEntity.tienda, let distrito = presenter?.detailEntity.distrito {
+            tiendaLabel.text = "\(tienda) - \(distrito)"
+        }
         direccionLabel.text = (presenter?.detailEntity.direccion)
     }
 }

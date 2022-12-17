@@ -15,11 +15,11 @@ protocol DistritoInteractorProtocol: AnyObject {
     func conseguirDistritos()
 }
 
-protocol DistritoPresenterInPut{
+protocol DistritoPresenterInPut: AnyObject{
     func entregarDistritos(_ distrito: [DistritoEntity])
 }
 
-protocol DistritoPresenterOutPut{
+protocol DistritoPresenterOutPut: AnyObject{
     func pedirDistritos()
     var distritosCount: Int {get}
     var distritosArray: [DistritoEntity] { get}

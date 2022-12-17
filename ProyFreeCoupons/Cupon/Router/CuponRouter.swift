@@ -8,8 +8,8 @@
 import UIKit
 
 class CuponRouter {
-    let presenter : CuponPresenterProtocol?
-    var view: UIViewController?
+    unowned let presenter : CuponPresenterProtocol?
+    weak var view: UIViewController?
     
     init(presenter: CuponPresenterProtocol?) {
         self.presenter = presenter

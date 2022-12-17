@@ -8,8 +8,8 @@
 import UIKit
 
 class OfertaRouter {
-    let presenter: OfertaPresenterOutPut?
-    var view: UIViewController?
+    unowned let presenter: OfertaPresenterOutPut?
+    weak var view: UIViewController?
     
     required init(presenter: OfertaPresenterOutPut?) {
         self.presenter = presenter

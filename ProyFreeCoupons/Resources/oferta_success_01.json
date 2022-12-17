@@ -8,6 +8,46 @@
         "direccion":"Av. Las Palmeras 3818"
     },
     {
+        "valor": 10,
+        "categoria":"Snacks",
+        "imgCat":"Cheaps",
+        "tienda":"Tambo",
+        "distrito":"Los Olivos",
+        "direccion":"Av. Angélica Gamarra 817"
+    },
+    {
+        "valor": 15,
+        "categoria":"Bebidas Alcholicas",
+        "imgCat":"Drink",
+        "tienda":"Tambo",
+        "distrito":"Los Olivos",
+        "direccion":"Av. Angélica Gamarra 817"
+    },
+    {
+        "valor": 30,
+        "categoria":"Bebidas Alcholicas",
+        "imgCat":"Drink",
+        "tienda":"Tambo",
+        "distrito":"Los Olivos",
+        "direccion":"Av. Santiago Antunez de Mayolo 1417"
+    },
+    {
+        "valor": 15,
+        "categoria":"Bebidas Alcholicas",
+        "imgCat":"Drink",
+        "tienda":"Tambo",
+        "distrito":"Los Olivos",
+        "direccion":"Av. Urbanizadora San Roque, Huandoy"
+    },
+    {
+        "valor": 20,
+        "categoria":"Bebidas Alcholicas",
+        "imgCat":"Drink",
+        "tienda":"Tambo",
+        "distrito":"Los Olivos",
+        "direccion":"Av. Las Palmeras 3818"
+    },
+    {
         "valor": 15,
         "categoria":"Pollos a la brasa",
         "imgCat":"Chicken",
@@ -32,9 +72,33 @@
         "direccion":"Av. Carlos Izaguirre 1113"
     },
     {
+        "valor": 10,
+        "categoria":"Snacks",
+        "imgCat":"Cheaps",
+        "tienda":"Mass",
+        "distrito":"Los Olivos",
+        "direccion":"Av. Carlos Izaguirre 1113"
+    },
+    {
+        "valor": 15,
+        "categoria":"Pizza's",
+        "imgCat":"Pizza",
+        "tienda":"Mass",
+        "distrito":"Los Olivos",
+        "direccion":"Av. Carlos Izaguirre 1113"
+    },
+    {
         "valor": 30,
         "categoria":"Pizza's",
         "imgCat":"Pizza",
+        "tienda":"Oxxo",
+        "distrito":"Los Olivos",
+        "direccion":"Av. Universitaria Mz. B"
+    },
+    {
+        "valor": 25,
+        "categoria":"Yogurt's",
+        "imgCat":"Milk",
         "tienda":"Oxxo",
         "distrito":"Los Olivos",
         "direccion":"Av. Universitaria Mz. B"
@@ -86,5 +150,125 @@
         "tienda":"Tambo",
         "distrito":"Magdalena",
         "direccion":"Av. del Ejército 290"
+    },
+    {
+        "valor": 20,
+        "categoria":"Bebidas Alcholicas",
+        "imgCat":"Drink",
+        "tienda":"Tambo",
+        "distrito":"Magdalena",
+        "direccion":"Av. del Ejército 290"
+    },
+    {
+        "valor": 20,
+        "categoria":"Bebidas Alcholicas",
+        "imgCat":"Drink",
+        "tienda":"Tambo",
+        "distrito":"San Borja",
+        "direccion":"Av. San Borja Nte. 996"
+    },
+    {
+        "valor": 15,
+        "categoria":"Pizza's",
+        "imgCat":"Pizza",
+        "tienda":"Tambo",
+        "distrito":"San Borja",
+        "direccion":"Av. San Borja Nte. 996"
+    },
+    {
+        "valor": 25,
+        "categoria":"Yogurt's",
+        "imgCat":"Milk",
+        "tienda":"Tambo",
+        "distrito":"San Borja",
+        "direccion":"Av. San Borja Nte. 996"
+    },
+    {
+        "valor": 30,
+        "categoria":"Pollos a la brasa",
+        "imgCat":"Chicken",
+        "tienda":"Tambo",
+        "distrito":"San Borja",
+        "direccion":"Av. San Borja Nte. 996"
+    },
+    {
+        "valor": 10,
+        "categoria":"Snacks",
+        "imgCat":"Cheaps",
+        "tienda":"Tambo",
+        "distrito":"San Borja",
+        "direccion":"Av. San Borja Nte. 996"
+    },
+    {
+        "valor": 15,
+        "categoria":"Cervezas",
+        "imgCat":"Beer",
+        "tienda":"Tambo",
+        "distrito":"San Borja",
+        "direccion":"Av. San Borja Nte. 996"
+    },
+    {
+        "valor": 15,
+        "categoria":"Gaseosas",
+        "imgCat":"Soda",
+        "tienda":"Tambo",
+        "distrito":"San Borja",
+        "direccion":"Av. San Borja Nte. 996"
+    },
+    {
+        "valor": 25,
+        "categoria":"Bebidas Alcholicas",
+        "imgCat":"Drink",
+        "tienda":"Mass",
+        "distrito":"San Borja",
+        "direccion":"Av. Aviación 3287"
+    },
+    {
+        "valor": 5,
+        "categoria":"Pizza's",
+        "imgCat":"Pizza",
+        "tienda":"Mass",
+        "distrito":"San Borja",
+        "direccion":"Av. Aviación 3287"
+    },
+    {
+        "valor": 15,
+        "categoria":"Yogurt's",
+        "imgCat":"Milk",
+        "tienda":"Mass",
+        "distrito":"San Borja",
+        "direccion":"Av. Aviación 3287"
+    },
+    {
+        "valor": 20,
+        "categoria":"Pollos a la brasa",
+        "imgCat":"Chicken",
+        "tienda":"Mass",
+        "distrito":"San Borja",
+        "direccion":"Av. Aviación 3287"
+    },
+    {
+        "valor": 5,
+        "categoria":"Snacks",
+        "imgCat":"Cheaps",
+        "tienda":"Mass",
+        "distrito":"San Borja",
+        "direccion":"Av. Aviación 3287"
+    },
+    {
+        "valor": 20,
+        "categoria":"Cervezas",
+        "imgCat":"Beer",
+        "tienda":"Mass",
+        "distrito":"San Borja",
+        "direccion":"Av. Aviación 3287"
+    },
+    {
+        "valor": 20,
+        "categoria":"Gaseosas",
+        "imgCat":"Soda",
+        "tienda":"Mass",
+        "distrito":"San Borja",
+        "direccion":"Av. Aviación 3287"
     }
 ]

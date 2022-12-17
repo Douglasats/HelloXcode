@@ -8,19 +8,17 @@
 import UIKit
 
 class UserRouter {
-    var presenter : UserPresenterProtocol?
-    var view: UIViewController?
+    unowned let presenter : UserPresenterProtocol?
+    weak var view: UIViewController?
     
     required init(presenter: UserPresenterProtocol?) {
         self.presenter = presenter
     }
-    
 }
 
 extension UserRouter: UserRouterProtocol {
     func irCupon(_ user: UserEntity,_ oferta: OfertaEntity) {
         let cuponViewController = CuponConfigurator.make(user, oferta)
         view?.navigationController?.pushViewController(cuponViewController, animated: true)
-        //view?.show(cuponViewController, sender: nil)
     }
 }

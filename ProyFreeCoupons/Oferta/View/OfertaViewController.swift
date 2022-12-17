@@ -24,16 +24,24 @@ class OfertaViewController: UIViewController {
         titleDistritoLabel.text = presenter?.distrito
         presenter?.pedirOfertas()
         searchTextField.placeholder = "Buscar por categoria o tienda"
-        searchTextField.addTarget(self, action: #selector(searchTextField(_:)), for: .editingChanged)
+        //searchTextField.addTarget(self, action: //#selector(searchTextField(_:)), for: .editingChanged)
     }
     
-    @objc func searchTextField(_ textField: UITextField){
+    @IBAction func searchTextField(_ textField: UITextField) {
         if textField == searchTextField{
-            let text = textField.text ?? ""
-            presenter?.oferFilter(text)
-            tableView.reloadData()
-        }
+                    let text = textField.text ?? ""
+                    presenter?.oferFilter(text)
+                    tableView.reloadData()
+                }
     }
+    
+//    @objc func searchTextField(_ textField: UITextField){
+//        if textField == searchTextField{
+//            let text = textField.text ?? ""
+//            presenter?.oferFilter(text)
+//            tableView.reloadData()
+//        }
+//    }
 }
 
 extension OfertaViewController: UITableViewDataSource{

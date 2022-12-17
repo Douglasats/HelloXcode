@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol UserPresenterProtocol {
+protocol UserPresenterProtocol: AnyObject {
     var detailEntity: OfertaEntity { get }
     func obtenerUser(_ user: UserEntity)
 }

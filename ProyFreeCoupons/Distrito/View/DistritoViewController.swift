@@ -10,7 +10,7 @@ import Alamofire
 
 class DistritoViewController: UIViewController {
     
-    var presenter: DistritoPresenterOutPut?
+    weak var presenter: DistritoPresenterOutPut?
     
     @IBOutlet weak var collectionView: UICollectionView!
     

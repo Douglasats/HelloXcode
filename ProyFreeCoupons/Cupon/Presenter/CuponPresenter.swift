@@ -30,7 +30,7 @@ extension CuponPresenter: CuponPresenterProtocol {
     }
     
     var numCupon: String? {
-    String(Int.random(in: 0..<10000))
+    String(Int.random(in: 0..<1000000))
     }
     
     func finalizar(){

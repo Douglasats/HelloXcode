@@ -8,8 +8,8 @@
 import Foundation
 
 class DistritoInteractor {
-    var presenter: DistritoPresenterInPut?
-    var api: RemoteRepository?
+    let presenter: DistritoPresenterInPut?
+    let api: RemoteRepository?
     
     required init(presenter: DistritoPresenterInPut, api: RemoteRepository) {
         self.presenter = presenter

@@ -11,7 +11,7 @@ protocol CuponRouterProtocol: AnyObject {
     func goHome()
 }
 
-protocol CuponPresenterProtocol {
+protocol CuponPresenterProtocol : AnyObject{
     var userCupon: UserEntity? { get }
     var ofertaCupon: OfertaEntity? { get }
     var numCupon: String? { get }

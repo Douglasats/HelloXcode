@@ -11,7 +11,7 @@ class MyCustomCollectionViewCell: UICollectionViewCell{
     
     @IBOutlet weak var distritoLabel: UILabel!
     var douglas: UIButton!
-  override func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
    }
     
