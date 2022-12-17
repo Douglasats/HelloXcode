@@ -11,7 +11,7 @@ class CuponViewController: UIViewController {
     
     var presenter : CuponPresenterProtocol?
     
-    @IBOutlet weak var cuponTitleLabel: UILabel!
+    @IBOutlet weak var cuponTitleLabel: UILabel!    
     @IBOutlet weak var qrImage: UIImageView!
     @IBOutlet weak var nroCuponLabel: UILabel!
     @IBOutlet weak var tiendaLabel: UILabel!
