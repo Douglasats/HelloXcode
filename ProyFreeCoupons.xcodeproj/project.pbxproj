@@ -7,25 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE29237029439EE10047A84C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29236F29439EE10047A84C /* UIButtonExtension.swift */; };
+		DE29238C29444A7A0047A84C /* DistritoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29238B29444A7A0047A84C /* DistritoPresenter.swift */; };
+		DE29238E29444A940047A84C /* DistritoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29238D29444A940047A84C /* DistritoInteractor.swift */; };
+		DE29239029444AA60047A84C /* DistritoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29238F29444AA60047A84C /* DistritoRouter.swift */; };
+		DE29239429444AE40047A84C /* DistritoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29239329444AE40047A84C /* DistritoConfigurator.swift */; };
+		DE29239629444C4A0047A84C /* DistritoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29239529444C4A0047A84C /* DistritoEntity.swift */; };
+		DE29239929444F040047A84C /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29239829444F040047A84C /* Networking.swift */; };
+		DE29239C2944500F0047A84C /* DistritoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29239B2944500F0047A84C /* DistritoResponse.swift */; };
+		DE2923DC2944EE240047A84C /* distrito_success_01.json in Resources */ = {isa = PBXBuildFile; fileRef = DE2923DB2944EE240047A84C /* distrito_success_01.json */; };
+		DE2923E62944FF770047A84C /* OfertaConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923E52944FF770047A84C /* OfertaConfigurator.swift */; };
+		DE2923E8294501130047A84C /* OfertaEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923E7294501130047A84C /* OfertaEntity.swift */; };
+		DE2923EA294501950047A84C /* OfertaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923E9294501950047A84C /* OfertaPresenter.swift */; };
+		DE2923EC294502610047A84C /* OfertaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923EB294502610047A84C /* OfertaInteractor.swift */; };
+		DE2923F0294793AD0047A84C /* oferta_success_01.json in Resources */ = {isa = PBXBuildFile; fileRef = DE2923EF294793AD0047A84C /* oferta_success_01.json */; };
+		DE2923F2294795CA0047A84C /* OfertaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2923F1294795CA0047A84C /* OfertaResponse.swift */; };
 		DE5FE182293192E000C7E9E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE181293192E000C7E9E8 /* AppDelegate.swift */; };
 		DE5FE184293192E000C7E9E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE183293192E000C7E9E8 /* SceneDelegate.swift */; };
-		DE5FE186293192E000C7E9E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE185293192E000C7E9E8 /* ViewController.swift */; };
-		DE5FE189293192E000C7E9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5FE187293192E000C7E9E8 /* Main.storyboard */; };
 		DE5FE18B293192E100C7E9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5FE18A293192E100C7E9E8 /* Assets.xcassets */; };
 		DE5FE18E293192E100C7E9E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5FE18C293192E100C7E9E8 /* LaunchScreen.storyboard */; };
-		DE5FE198293519F400C7E9E8 /* PrimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE197293519F400C7E9E8 /* PrimerViewController.swift */; };
+		DE5FE198293519F400C7E9E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FE197293519F400C7E9E8 /* HomeViewController.swift */; };
+		DE6DCDDA2942E85E00E4E172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6DCDD92942E85E00E4E172 /* Main.storyboard */; };
+		DE6DCDDC2942EA3F00E4E172 /* DistritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6DCDDB2942EA3F00E4E172 /* DistritoViewController.swift */; };
+		DE6DCDDF2942EBE800E4E172 /* MyCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6DCDDD2942EBE800E4E172 /* MyCustomCollectionViewCell.swift */; };
+		DE6DCDE02942EBE800E4E172 /* MyCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6DCDDE2942EBE800E4E172 /* MyCustomCollectionViewCell.xib */; };
+		DEC0F6422936A4340053CE78 /* OfertaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC0F6412936A4340053CE78 /* OfertaViewController.swift */; };
+		DEC9C0432947C595005890EC /* OfertaCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C0412947C595005890EC /* OfertaCustomTableViewCell.swift */; };
+		DEC9C0442947C595005890EC /* OfertaCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEC9C0422947C595005890EC /* OfertaCustomTableViewCell.xib */; };
+		DEC9C0612948E60D005890EC /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C0602948E60D005890EC /* UserViewController.swift */; };
+		DEC9C0632948E627005890EC /* UserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C0622948E627005890EC /* UserConfigurator.swift */; };
+		DEC9C0652948FFC4005890EC /* OfertaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C0642948FFC4005890EC /* OfertaRouter.swift */; };
+		DEC9C06729490194005890EC /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C06629490194005890EC /* UserPresenter.swift */; };
+		DEC9C06929490CD3005890EC /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C06829490CD3005890EC /* UserEntity.swift */; };
+		DEC9C06B294916A8005890EC /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C06A294916A8005890EC /* UserRouter.swift */; };
+		DEC9C074294919E2005890EC /* CuponConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C073294919E2005890EC /* CuponConfigurator.swift */; };
+		DEC9C07629491A76005890EC /* CuponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C07529491A76005890EC /* CuponViewController.swift */; };
+		DEC9C07829491D7E005890EC /* CuponPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C07729491D7E005890EC /* CuponPresenter.swift */; };
+		DEC9C07B29491DC6005890EC /* CuponRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C07A29491DC6005890EC /* CuponRouter.swift */; };
+		DEC9C07E29491DEB005890EC /* CuponInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C07D29491DEB005890EC /* CuponInteractor.swift */; };
+		DEC9C081294A81C6005890EC /* DistritoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C080294A81C6005890EC /* DistritoProtocols.swift */; };
+		DEC9C084294A8249005890EC /* OfertaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C083294A8249005890EC /* OfertaProtocols.swift */; };
+		DEC9C087294A849D005890EC /* UserProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C086294A849D005890EC /* UserProtocols.swift */; };
+		DEC9C08A294A852C005890EC /* CuponProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC9C089294A852C005890EC /* CuponProtocols.swift */; };
+		DEC9C08C294A8827005890EC /* DistritoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC9C08B294A8827005890EC /* DistritoViewController.storyboard */; };
+		DEC9C08E294A88AB005890EC /* OfertaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC9C08D294A88AB005890EC /* OfertaViewController.storyboard */; };
+		DEC9C092294A8926005890EC /* CuponViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC9C091294A8926005890EC /* CuponViewController.storyboard */; };
+		DEC9C098294A8E93005890EC /* UserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC9C097294A8E93005890EC /* UserViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE29236F29439EE10047A84C /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		DE29238B29444A7A0047A84C /* DistritoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoPresenter.swift; sourceTree = "<group>"; };
+		DE29238D29444A940047A84C /* DistritoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoInteractor.swift; sourceTree = "<group>"; };
+		DE29238F29444AA60047A84C /* DistritoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoRouter.swift; sourceTree = "<group>"; };
+		DE29239329444AE40047A84C /* DistritoConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoConfigurator.swift; sourceTree = "<group>"; };
+		DE29239529444C4A0047A84C /* DistritoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoEntity.swift; sourceTree = "<group>"; };
+		DE29239829444F040047A84C /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		DE29239B2944500F0047A84C /* DistritoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoResponse.swift; sourceTree = "<group>"; };
+		DE2923DB2944EE240047A84C /* distrito_success_01.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = distrito_success_01.json; sourceTree = "<group>"; };
+		DE2923E52944FF770047A84C /* OfertaConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaConfigurator.swift; sourceTree = "<group>"; };
+		DE2923E7294501130047A84C /* OfertaEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaEntity.swift; sourceTree = "<group>"; };
+		DE2923E9294501950047A84C /* OfertaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaPresenter.swift; sourceTree = "<group>"; };
+		DE2923EB294502610047A84C /* OfertaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaInteractor.swift; sourceTree = "<group>"; };
+		DE2923EF294793AD0047A84C /* oferta_success_01.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = oferta_success_01.json; sourceTree = "<group>"; };
+		DE2923F1294795CA0047A84C /* OfertaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaResponse.swift; sourceTree = "<group>"; };
 		DE5FE17E293192E000C7E9E8 /* ProyFreeCoupons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyFreeCoupons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5FE181293192E000C7E9E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5FE183293192E000C7E9E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE5FE185293192E000C7E9E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DE5FE188293192E000C7E9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE5FE18A293192E100C7E9E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5FE18D293192E100C7E9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5FE18F293192E100C7E9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE5FE197293519F400C7E9E8 /* PrimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerViewController.swift; sourceTree = "<group>"; };
+		DE5FE197293519F400C7E9E8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DE6DCDD92942E85E00E4E172 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DE6DCDDB2942EA3F00E4E172 /* DistritoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoViewController.swift; sourceTree = "<group>"; };
+		DE6DCDDD2942EBE800E4E172 /* MyCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE6DCDDE2942EBE800E4E172 /* MyCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		DEC0F6412936A4340053CE78 /* OfertaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaViewController.swift; sourceTree = "<group>"; };
+		DEC9C0412947C595005890EC /* OfertaCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaCustomTableViewCell.swift; sourceTree = "<group>"; };
+		DEC9C0422947C595005890EC /* OfertaCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfertaCustomTableViewCell.xib; sourceTree = "<group>"; };
+		DEC9C0602948E60D005890EC /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		DEC9C0622948E627005890EC /* UserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigurator.swift; sourceTree = "<group>"; };
+		DEC9C0642948FFC4005890EC /* OfertaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaRouter.swift; sourceTree = "<group>"; };
+		DEC9C06629490194005890EC /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		DEC9C06829490CD3005890EC /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		DEC9C06A294916A8005890EC /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		DEC9C073294919E2005890EC /* CuponConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponConfigurator.swift; sourceTree = "<group>"; };
+		DEC9C07529491A76005890EC /* CuponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponViewController.swift; sourceTree = "<group>"; };
+		DEC9C07729491D7E005890EC /* CuponPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponPresenter.swift; sourceTree = "<group>"; };
+		DEC9C07A29491DC6005890EC /* CuponRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponRouter.swift; sourceTree = "<group>"; };
+		DEC9C07D29491DEB005890EC /* CuponInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponInteractor.swift; sourceTree = "<group>"; };
+		DEC9C080294A81C6005890EC /* DistritoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistritoProtocols.swift; sourceTree = "<group>"; };
+		DEC9C083294A8249005890EC /* OfertaProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaProtocols.swift; sourceTree = "<group>"; };
+		DEC9C086294A849D005890EC /* UserProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocols.swift; sourceTree = "<group>"; };
+		DEC9C089294A852C005890EC /* CuponProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuponProtocols.swift; sourceTree = "<group>"; };
+		DEC9C08B294A8827005890EC /* DistritoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DistritoViewController.storyboard; sourceTree = "<group>"; };
+		DEC9C08D294A88AB005890EC /* OfertaViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfertaViewController.storyboard; sourceTree = "<group>"; };
+		DEC9C091294A8926005890EC /* CuponViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CuponViewController.storyboard; sourceTree = "<group>"; };
+		DEC9C097294A8E93005890EC /* UserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +117,148 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE29236C29439E960047A84C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DE29236F29439EE10047A84C /* UIButtonExtension.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DE2923712943A4E80047A84C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE6DCDDB2942EA3F00E4E172 /* DistritoViewController.swift */,
+				DE6DCDDD2942EBE800E4E172 /* MyCustomCollectionViewCell.swift */,
+				DE6DCDDE2942EBE800E4E172 /* MyCustomCollectionViewCell.xib */,
+				DEC9C08B294A8827005890EC /* DistritoViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE2923722943A4F60047A84C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DE29238B29444A7A0047A84C /* DistritoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE2923732943A4FD0047A84C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DE29238D29444A940047A84C /* DistritoInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DE2923742943A5070047A84C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DE29238F29444AA60047A84C /* DistritoRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DE2923752943A5140047A84C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DE29239529444C4A0047A84C /* DistritoEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DE29238A294449580047A84C /* Distrito */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C07F294A81B4005890EC /* Protocols */,
+				DE2923712943A4E80047A84C /* View */,
+				DE2923732943A4FD0047A84C /* Interactor */,
+				DE2923722943A4F60047A84C /* Presenter */,
+				DE2923752943A5140047A84C /* Entity */,
+				DE2923742943A5070047A84C /* Router */,
+				DEC9C0572948E52D005890EC /* Configurator */,
+			);
+			path = Distrito;
+			sourceTree = "<group>";
+		};
+		DE29239729444EE80047A84C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE29239829444F040047A84C /* Networking.swift */,
+			);
+			name = Network;
+			path = Distrito/Network;
+			sourceTree = "<group>";
+		};
+		DE29239A29444FF80047A84C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE29239B2944500F0047A84C /* DistritoResponse.swift */,
+				DE2923DB2944EE240047A84C /* distrito_success_01.json */,
+				DE2923EF294793AD0047A84C /* oferta_success_01.json */,
+				DE2923F1294795CA0047A84C /* OfertaResponse.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE2923DD2944FF160047A84C /* Oferta */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C082294A8238005890EC /* Protocols */,
+				DE2923E02944FF3C0047A84C /* View */,
+				DE2923E22944FF4A0047A84C /* Interactor */,
+				DE2923E12944FF440047A84C /* Presenter */,
+				DE2923E42944FF580047A84C /* Entity */,
+				DE2923E32944FF510047A84C /* Router */,
+				DEC9C0582948E56A005890EC /* Configurator */,
+			);
+			path = Oferta;
+			sourceTree = "<group>";
+		};
+		DE2923E02944FF3C0047A84C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEC0F6412936A4340053CE78 /* OfertaViewController.swift */,
+				DEC9C0412947C595005890EC /* OfertaCustomTableViewCell.swift */,
+				DEC9C0422947C595005890EC /* OfertaCustomTableViewCell.xib */,
+				DEC9C08D294A88AB005890EC /* OfertaViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE2923E12944FF440047A84C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DE2923E9294501950047A84C /* OfertaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE2923E22944FF4A0047A84C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DE2923EB294502610047A84C /* OfertaInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DE2923E32944FF510047A84C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C0642948FFC4005890EC /* OfertaRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DE2923E42944FF580047A84C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DE2923E7294501130047A84C /* OfertaEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		DE5FE175293192E000C7E9E8 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +278,218 @@
 		DE5FE180293192E000C7E9E8 /* ProyFreeCoupons */ = {
 			isa = PBXGroup;
 			children = (
+				DE29239729444EE80047A84C /* Network */,
+				DE29239A29444FF80047A84C /* Resources */,
+				DEC9C06C29491993005890EC /* Cupon */,
+				DEC9C0592948E59F005890EC /* User */,
+				DE2923DD2944FF160047A84C /* Oferta */,
+				DE29238A294449580047A84C /* Distrito */,
+				DEC9C099294BBB58005890EC /* Home */,
+				DEC9C094294A8BE8005890EC /* Suporting Files */,
+				DEC9C093294A8BD4005890EC /* Launch */,
+				DE29236C29439E960047A84C /* Util */,
 				DE5FE181293192E000C7E9E8 /* AppDelegate.swift */,
 				DE5FE183293192E000C7E9E8 /* SceneDelegate.swift */,
-				DE5FE185293192E000C7E9E8 /* ViewController.swift */,
-				DE5FE187293192E000C7E9E8 /* Main.storyboard */,
 				DE5FE18A293192E100C7E9E8 /* Assets.xcassets */,
-				DE5FE18C293192E100C7E9E8 /* LaunchScreen.storyboard */,
-				DE5FE18F293192E100C7E9E8 /* Info.plist */,
-				DE5FE197293519F400C7E9E8 /* PrimerViewController.swift */,
 			);
 			path = ProyFreeCoupons;
+			sourceTree = "<group>";
+		};
+		DEC9C0572948E52D005890EC /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DE29239329444AE40047A84C /* DistritoConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DEC9C0582948E56A005890EC /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DE2923E52944FF770047A84C /* OfertaConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DEC9C0592948E59F005890EC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C085294A848B005890EC /* Protocols */,
+				DEC9C05E2948E5D1005890EC /* View */,
+				DEC9C05D2948E5C9005890EC /* Interactor */,
+				DEC9C05C2948E5C1005890EC /* Presenter */,
+				DEC9C05A2948E5B0005890EC /* Entity */,
+				DEC9C05B2948E5B7005890EC /* Router */,
+				DEC9C05F2948E5F1005890EC /* Configurator */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DEC9C05A2948E5B0005890EC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C06829490CD3005890EC /* UserEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DEC9C05B2948E5B7005890EC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C06A294916A8005890EC /* UserRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DEC9C05C2948E5C1005890EC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C06629490194005890EC /* UserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DEC9C05D2948E5C9005890EC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DEC9C05E2948E5D1005890EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C0602948E60D005890EC /* UserViewController.swift */,
+				DEC9C097294A8E93005890EC /* UserViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEC9C05F2948E5F1005890EC /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C0622948E627005890EC /* UserConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DEC9C06C29491993005890EC /* Cupon */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C088294A8521005890EC /* Protocols */,
+				DEC9C06D294919A2005890EC /* View */,
+				DEC9C06E294919A6005890EC /* Interactor */,
+				DEC9C06F294919AB005890EC /* Presenter */,
+				DEC9C071294919BE005890EC /* Entity */,
+				DEC9C070294919B3005890EC /* Router */,
+				DEC9C072294919C3005890EC /* Configurator */,
+			);
+			path = Cupon;
+			sourceTree = "<group>";
+		};
+		DEC9C06D294919A2005890EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C07529491A76005890EC /* CuponViewController.swift */,
+				DEC9C091294A8926005890EC /* CuponViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEC9C06E294919A6005890EC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C07D29491DEB005890EC /* CuponInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DEC9C06F294919AB005890EC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C07729491D7E005890EC /* CuponPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DEC9C070294919B3005890EC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C07A29491DC6005890EC /* CuponRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DEC9C071294919BE005890EC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DEC9C072294919C3005890EC /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C073294919E2005890EC /* CuponConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		DEC9C07F294A81B4005890EC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C080294A81C6005890EC /* DistritoProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DEC9C082294A8238005890EC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C083294A8249005890EC /* OfertaProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DEC9C085294A848B005890EC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C086294A849D005890EC /* UserProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DEC9C088294A8521005890EC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DEC9C089294A852C005890EC /* CuponProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		DEC9C093294A8BD4005890EC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				DE5FE18C293192E100C7E9E8 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		DEC9C094294A8BE8005890EC /* Suporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE5FE18F293192E100C7E9E8 /* Info.plist */,
+			);
+			path = "Suporting Files";
+			sourceTree = "<group>";
+		};
+		DEC9C099294BBB58005890EC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE6DCDD92942E85E00E4E172 /* Main.storyboard */,
+				DE5FE197293519F400C7E9E8 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +508,8 @@
 			dependencies = (
 			);
 			name = ProyFreeCoupons;
+			packageProductDependencies = (
+			);
 			productName = ProyFreeCoupons;
 			productReference = DE5FE17E293192E000C7E9E8 /* ProyFreeCoupons.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +538,8 @@
 				Base,
 			);
 			mainGroup = DE5FE175293192E000C7E9E8;
+			packageReferences = (
+			);
 			productRefGroup = DE5FE17F293192E000C7E9E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,9 +554,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC9C08C294A8827005890EC /* DistritoViewController.storyboard in Resources */,
+				DEC9C08E294A88AB005890EC /* OfertaViewController.storyboard in Resources */,
 				DE5FE18E293192E100C7E9E8 /* LaunchScreen.storyboard in Resources */,
+				DEC9C092294A8926005890EC /* CuponViewController.storyboard in Resources */,
+				DE6DCDE02942EBE800E4E172 /* MyCustomCollectionViewCell.xib in Resources */,
 				DE5FE18B293192E100C7E9E8 /* Assets.xcassets in Resources */,
-				DE5FE189293192E000C7E9E8 /* Main.storyboard in Resources */,
+				DE6DCDDA2942E85E00E4E172 /* Main.storyboard in Resources */,
+				DEC9C0442947C595005890EC /* OfertaCustomTableViewCell.xib in Resources */,
+				DE2923DC2944EE240047A84C /* distrito_success_01.json in Resources */,
+				DEC9C098294A8E93005890EC /* UserViewController.storyboard in Resources */,
+				DE2923F0294793AD0047A84C /* oferta_success_01.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +575,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5FE186293192E000C7E9E8 /* ViewController.swift in Sources */,
+				DE29239929444F040047A84C /* Networking.swift in Sources */,
+				DEC9C0612948E60D005890EC /* UserViewController.swift in Sources */,
+				DEC9C074294919E2005890EC /* CuponConfigurator.swift in Sources */,
+				DE29239629444C4A0047A84C /* DistritoEntity.swift in Sources */,
+				DE29238C29444A7A0047A84C /* DistritoPresenter.swift in Sources */,
+				DEC9C081294A81C6005890EC /* DistritoProtocols.swift in Sources */,
+				DEC9C084294A8249005890EC /* OfertaProtocols.swift in Sources */,
+				DE29239029444AA60047A84C /* DistritoRouter.swift in Sources */,
+				DE29238E29444A940047A84C /* DistritoInteractor.swift in Sources */,
+				DEC9C0652948FFC4005890EC /* OfertaRouter.swift in Sources */,
+				DE29239C2944500F0047A84C /* DistritoResponse.swift in Sources */,
+				DE6DCDDF2942EBE800E4E172 /* MyCustomCollectionViewCell.swift in Sources */,
+				DEC9C07829491D7E005890EC /* CuponPresenter.swift in Sources */,
+				DEC9C07B29491DC6005890EC /* CuponRouter.swift in Sources */,
+				DEC9C06929490CD3005890EC /* UserEntity.swift in Sources */,
+				DE29237029439EE10047A84C /* UIButtonExtension.swift in Sources */,
+				DEC9C07E29491DEB005890EC /* CuponInteractor.swift in Sources */,
+				DEC9C06729490194005890EC /* UserPresenter.swift in Sources */,
+				DEC9C06B294916A8005890EC /* UserRouter.swift in Sources */,
+				DE2923E8294501130047A84C /* OfertaEntity.swift in Sources */,
+				DEC9C0632948E627005890EC /* UserConfigurator.swift in Sources */,
 				DE5FE182293192E000C7E9E8 /* AppDelegate.swift in Sources */,
+				DEC9C08A294A852C005890EC /* CuponProtocols.swift in Sources */,
+				DE2923EA294501950047A84C /* OfertaPresenter.swift in Sources */,
+				DEC9C087294A849D005890EC /* UserProtocols.swift in Sources */,
+				DE2923EC294502610047A84C /* OfertaInteractor.swift in Sources */,
+				DEC9C07629491A76005890EC /* CuponViewController.swift in Sources */,
+				DE6DCDDC2942EA3F00E4E172 /* DistritoViewController.swift in Sources */,
+				DEC0F6422936A4340053CE78 /* OfertaViewController.swift in Sources */,
 				DE5FE184293192E000C7E9E8 /* SceneDelegate.swift in Sources */,
-				DE5FE198293519F400C7E9E8 /* PrimerViewController.swift in Sources */,
+				DEC9C0432947C595005890EC /* OfertaCustomTableViewCell.swift in Sources */,
+				DE29239429444AE40047A84C /* DistritoConfigurator.swift in Sources */,
+				DE5FE198293519F400C7E9E8 /* HomeViewController.swift in Sources */,
+				DE2923E62944FF770047A84C /* OfertaConfigurator.swift in Sources */,
+				DE2923F2294795CA0047A84C /* OfertaResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DE5FE187293192E000C7E9E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DE5FE188293192E000C7E9E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DE5FE18C293192E100C7E9E8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +749,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProyFreeCoupons/Info.plist;
+				INFOPLIST_FILE = "ProyFreeCoupons/Suporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +776,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProyFreeCoupons/Info.plist;
+				INFOPLIST_FILE = "ProyFreeCoupons/Suporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

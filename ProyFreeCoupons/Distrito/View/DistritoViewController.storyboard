@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Distrito View Controller-->
+        <scene sceneID="cSG-5Y-II9">
+            <objects>
+                <viewController storyboardIdentifier="DistritoViewController" id="SBC-QV-esQ" customClass="DistritoViewController" customModule="ProyFreeCoupons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ps6-D0-2oE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j0v-y6-Nsn">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="15" minimumInteritemSpacing="15" id="0G0-dY-upj">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xak-UV-m7x"/>
+                        <color key="backgroundColor" red="1" green="0.77647058820000003" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xak-UV-m7x" firstAttribute="trailing" secondItem="j0v-y6-Nsn" secondAttribute="trailing" id="FhE-4z-LLu"/>
+                            <constraint firstItem="j0v-y6-Nsn" firstAttribute="top" secondItem="Xak-UV-m7x" secondAttribute="top" id="LiY-Ic-Jpw"/>
+                            <constraint firstItem="j0v-y6-Nsn" firstAttribute="leading" secondItem="Xak-UV-m7x" secondAttribute="leading" id="ggH-dA-beG"/>
+                            <constraint firstItem="Xak-UV-m7x" firstAttribute="bottom" secondItem="j0v-y6-Nsn" secondAttribute="bottom" id="pCd-Ws-EkL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="j0v-y6-Nsn" id="l7r-t3-vwh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFc-RO-gG4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3060.3053435114502" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>

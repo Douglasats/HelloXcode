@@ -1,18 +1,14 @@
 //
-//  PrimerViewController.swift
+//  FinalViewController.swift
 //  ProyFreeCoupons
 //
-//  Created by Douglas Andreus Tafur Saldivar on 28/11/22.
+//  Created by Douglas Andreus Tafur Saldivar on 1/12/22.
 //
 
 import UIKit
 
-class PrimerViewController: UIViewController {
-    
-    @IBAction func verOfertas(_ sender: UIButton) {
-        performSegue(withIdentifier: "listarOfertas", sender: nil)
-    }
-    
+class FinalViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
